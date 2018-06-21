@@ -7,9 +7,6 @@ public class Player : Character {
     private BoxCollider2D bounds;
     private CameraMovement theCam;
 
-    private Vector3 targetPos;
-    public float camSpeed;
-
     // Use this for initialization
     protected override void Start () {
 
@@ -61,16 +58,12 @@ public class Player : Character {
     {
         if (other.gameObject.tag == "Bounds")
         {
-            Debug.Log("Entrou no bound");
-
+            //Reconhece o novo bound em contato e seta os bounds da camera para o novo bound, movendo o player para solucionar um bug
             bounds = other.GetComponent<BoxCollider2D>();
             theCam = FindObjectOfType<CameraMovement>();
-            //theCam.transform.Translate(transform.position.x + 10, transform.position.y + 10, 0);
-            //float step = camSpeed * Time.deltaTime;
-            //targetPos = new Vector3(transform.position.x + 50, 0, 0);
-            //theCam.transform.position = Vector3.MoveTowards(theCam.transform.position, targetPos, step);
             theCam.SetBounds(bounds);
+            float tempSpeed = 25f;
+            transform.Translate(direction * tempSpeed * Time.deltaTime);
         }
     }
-
 }

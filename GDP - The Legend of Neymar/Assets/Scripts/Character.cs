@@ -5,7 +5,7 @@ public class Character : MonoBehaviour {
 
     //Serialize field aqui torna a variável private speed visivel no Inspector
     [SerializeField]
-    private float speed;
+    protected float speed;
 
     //Armazena a direção
     protected Vector2 direction;
