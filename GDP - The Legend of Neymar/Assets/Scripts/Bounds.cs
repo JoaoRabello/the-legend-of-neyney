@@ -9,9 +9,17 @@ public class Bounds : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        bounds = GetComponent<BoxCollider2D>();
-        theCam = FindObjectOfType<CameraMovement>();
-        theCam.SetBounds(bounds);
+        
 	}
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player") {
+            Debug.Log("Entrou no bound");
+            bounds = GetComponent<BoxCollider2D>();
+            theCam = FindObjectOfType<CameraMovement>();
+            theCam.SetBounds(bounds);
+        }
+    }
 
 }

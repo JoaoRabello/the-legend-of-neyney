@@ -4,9 +4,14 @@ using UnityEngine;
 public class Player : Character {
 
 
+    private BoxCollider2D bounds;
+    private CameraMovement theCam;
 
-	// Use this for initialization
-	protected override void Start () {
+    private Vector3 targetPos;
+    public float camSpeed;
+
+    // Use this for initialization
+    protected override void Start () {
 
         base.Start();
 
@@ -21,8 +26,6 @@ public class Player : Character {
 
 	}
 
-
-    
 
     private void GetInput()
     {
@@ -52,7 +55,22 @@ public class Player : Character {
                 }
             }       
         }
-        
-
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Bounds")
+        {
+            Debug.Log("Entrou no bound");
+
+            bounds = other.GetComponent<BoxCollider2D>();
+            theCam = FindObjectOfType<CameraMovement>();
+            //theCam.transform.Translate(transform.position.x + 10, transform.position.y + 10, 0);
+            //float step = camSpeed * Time.deltaTime;
+            //targetPos = new Vector3(transform.position.x + 50, 0, 0);
+            //theCam.transform.position = Vector3.MoveTowards(theCam.transform.position, targetPos, step);
+            theCam.SetBounds(bounds);
+        }
+    }
+
 }
