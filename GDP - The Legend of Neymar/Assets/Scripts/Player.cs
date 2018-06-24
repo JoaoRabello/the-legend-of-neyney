@@ -40,7 +40,7 @@ public class Player : Character {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 
             direction += Vector2.up;  // y = 1
-            ballDirection = new Vector2 (0, 0.2f);
+            ballDirection = new Vector2 (0, 0.5f);
 
         }
         else {
@@ -68,7 +68,7 @@ public class Player : Character {
         if (Input.GetKey(KeyCode.V) && bolaDisponivel == true)
         {
             chutaBola();
-            //bolaDisponivel = false;
+            bolaDisponivel = false;
         }
     }
 
