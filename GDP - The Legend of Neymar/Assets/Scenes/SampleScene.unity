@@ -282,6 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  direction: {x: 0, y: 0}
+  bola: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}
+  ballDirection: {x: 0, y: 0}
 --- !u!212 &749944573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -495,7 +498,7 @@ GameObject:
   m_Layer: 0
   m_Name: "Bound_Segunda_Regi\xE3o"
   m_TagString: Bounds
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -862,7 +865,7 @@ GameObject:
   m_Layer: 0
   m_Name: "Bound_Regi\xE3o_Inicial"
   m_TagString: Bounds
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

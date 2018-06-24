@@ -7,8 +7,11 @@ public class Character : MonoBehaviour {
     [SerializeField]
     protected float speed;
 
+    //Variável para contar a vida
+    protected int life;
+
     //Armazena a direção
-    protected Vector2 direction;
+    public Vector2 direction;
 
     private Animator animator;
 
