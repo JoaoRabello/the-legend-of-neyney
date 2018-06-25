@@ -1,14 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BallController : MonoBehaviour {
 
-    float ballSpeed = 5f;       //Velocidade de movimento da bola
+    public float ballSpeed = 5f;       //Velocidade de movimento da bola
     private Player player;      //Instancia de player para receber a posição do mesmo
     private Vector2 kickDir;    //Armazena a direção do chute
-    private Vector2 kickRange;  //Armazena a posição máxima do chute
+    public Vector2 kickRange;  //Armazena a posição máxima do chute
     private Vector2 range;      //Armazena a distância máxima do chute (2.25)
+
+    public bool canBeKicked = true; 
+
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +41,36 @@ public class BallController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //Leva a bola do player até a posição máxima de seu range
-        transform.position = Vector3.MoveTowards(transform.position, kickRange, Time.deltaTime * ballSpeed);
+        //Leva a bola do player até a posição máxima de seu range se ainda não estiver no range máximo
+        if ((Vector2)transform.position != kickRange && canBeKicked == true)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, kickRange, Time.deltaTime * ballSpeed);
+            player.bolaOnMaxRange = false;
+        }
+        else
+        {
+            if ((Vector2)transform.position == kickRange)
+            {
+                player.bolaOnMaxRange = true;
+            }
+        }
+        if (canBeKicked == false)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Time.deltaTime * ballSpeed);    
+        }
+
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+            player.bolaDisponivel = true;
+            player.bolaOnMaxRange = false;
+            canBeKicked = true;
+        }
+    }
+
+
 }

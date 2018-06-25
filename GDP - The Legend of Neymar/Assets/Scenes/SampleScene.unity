@@ -284,7 +284,10 @@ MonoBehaviour:
   speed: 2
   direction: {x: 0, y: 0}
   bola: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}
+  bolaDisponivel: 1
+  bolaOnMaxRange: 0
   ballDirection: {x: 0, y: 0}
+  ballControl: {fileID: 0}
 --- !u!212 &749944573
 SpriteRenderer:
   m_ObjectHideFlags: 0

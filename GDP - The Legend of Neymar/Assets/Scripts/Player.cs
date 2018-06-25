@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : Character {
 
@@ -9,11 +8,17 @@ public class Player : Character {
 
 
     public Rigidbody2D bola;
-    private bool bolaDisponivel = true;
+    public bool bolaDisponivel = true;
+    public bool bolaOnMaxRange = false;
     public Vector2 ballDirection;
+    
+    public BallController ballControl;
+
 
     // Use this for initialization
     protected override void Start () {
+
+ 
 
         base.Start();
 
@@ -47,19 +52,19 @@ public class Player : Character {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
 
                 direction += Vector2.left;  // x = -1
-                ballDirection = new Vector2 (-0.2f , -0.25f);
+                ballDirection = new Vector2 (-0.5f , -0.25f);
             }
             else {
                 if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
 
                     direction += Vector2.down;  // y = -1
-                    ballDirection = new Vector2 (0 , -0.2f);
+                    ballDirection = new Vector2 (0 , -0.5f);
                 }
                 else {
                     if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
 
                         direction += Vector2.right;  // x = 1
-                        ballDirection = new Vector2 (0.2f , -0.25f);
+                        ballDirection = new Vector2 (0.5f , -0.25f);
                     }
                 }
             }       
@@ -68,8 +73,19 @@ public class Player : Character {
         if (Input.GetKey(KeyCode.V) && bolaDisponivel == true)
         {
             chutaBola();
+            ballControl = FindObjectOfType<BallController>();
             bolaDisponivel = false;
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true)
+            {
+                Debug.Log("Recupera bola");
+                ballControl.canBeKicked = false;
+            }
+        }
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -83,10 +99,13 @@ public class Player : Character {
             float tempSpeed = 25f;
             transform.Translate(direction * tempSpeed * Time.deltaTime);
         }
+
     }
 
     private void chutaBola()
-    {
+    {        
         Instantiate(bola, (Vector2)transform.position + ballDirection, Quaternion.identity);
     }
+
 }
+
