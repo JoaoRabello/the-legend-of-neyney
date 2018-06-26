@@ -80,7 +80,6 @@ public class Player : Character {
         {
             if (Input.GetKey(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true)
             {
-                Debug.Log("Recupera bola");
                 ballControl.canBeKicked = false;
             }
         }

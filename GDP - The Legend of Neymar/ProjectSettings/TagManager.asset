@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bounds
-  - Border
   - Bola
+  - ColisorBola
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - ColisorBola
   - 
   - 
   - 

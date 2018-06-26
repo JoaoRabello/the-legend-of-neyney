@@ -8,13 +8,16 @@ public class BallController : MonoBehaviour {
     public Vector2 kickRange;  //Armazena a posição máxima do chute
     private Vector2 range;      //Armazena a distância máxima do chute (2.25)
 
+    private Animator anim;
     public bool canBeKicked = true; 
+    private Vector3 playerPos;
 
 
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<Player>();
         kickDir = player.ballDirection;
+        anim = GetComponent<Animator>();
 
         //If para evitar com que a bola vá na diagonal e setar o range do chute
         if (kickDir.x != 0)
@@ -39,24 +42,28 @@ public class BallController : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         //Leva a bola do player até a posição máxima de seu range se ainda não estiver no range máximo
         if ((Vector2)transform.position != kickRange && canBeKicked == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, kickRange, Time.deltaTime * ballSpeed);
             player.bolaOnMaxRange = false;
+            anim.SetBool("isMoving", true);
         }
         else
         {
             if ((Vector2)transform.position == kickRange)
             {
                 player.bolaOnMaxRange = true;
+                anim.SetBool("isMoving", false);
             }
         }
         if (canBeKicked == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Time.deltaTime * ballSpeed);    
+            playerPos = player.transform.position + new Vector3(0,-0.25f,0);
+            transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * ballSpeed);
+            anim.SetBool("isMoving", true);
         }
 
 	}
@@ -69,6 +76,12 @@ public class BallController : MonoBehaviour {
             player.bolaDisponivel = true;
             player.bolaOnMaxRange = false;
             canBeKicked = true;
+        }
+        if (collision.gameObject.tag == "Wall")
+        {
+            player.bolaOnMaxRange = true;
+            canBeKicked = false;
+            anim.SetBool("isMoving", false);
         }
     }
 
