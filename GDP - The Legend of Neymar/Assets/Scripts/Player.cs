@@ -6,19 +6,18 @@ public class Player : Character {
     private BoxCollider2D bounds;
     private CameraMovement theCam;
 
+    public bool isAlive = true;
 
-    public Rigidbody2D bola;
+    public bool playerNaParede = false;
     public bool bolaDisponivel = true;
     public bool bolaOnMaxRange = false;
-    public Vector2 ballDirection;
+    public Vector2 bolaDir;
     
-    public BallController ballControl;
-
+    public BallController bolaControl;
+    public Rigidbody2D bolaRb;
 
     // Use this for initialization
     protected override void Start () {
-
- 
 
         base.Start();
 
@@ -33,6 +32,7 @@ public class Player : Character {
 
         base.Update();
 
+
 	}
 
 
@@ -44,43 +44,43 @@ public class Player : Character {
         //Verifica se a entrada do teclado indica o movimento para cima (w ou seta cima)
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 
-            direction += Vector2.up;  // y = 1
-            ballDirection = new Vector2 (0, 0.5f);
+            direction += Vector2.up;
+            bolaDir = new Vector2 (0, 0.5f);
 
         }
         else {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
 
-                direction += Vector2.left;  // x = -1
-                ballDirection = new Vector2 (-0.5f , -0.25f);
+                direction += Vector2.left; 
+                bolaDir = new Vector2 (-0.5f , -0.25f);
             }
             else {
                 if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
 
-                    direction += Vector2.down;  // y = -1
-                    ballDirection = new Vector2 (0 , -0.5f);
+                    direction += Vector2.down;
+                    bolaDir = new Vector2 (0 , -0.5f);
                 }
                 else {
                     if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
 
-                        direction += Vector2.right;  // x = 1
-                        ballDirection = new Vector2 (0.5f , -0.25f);
+                        direction += Vector2.right;
+                        bolaDir = new Vector2 (0.5f , -0.25f);
                     }
                 }
             }       
         }
 
-        if (Input.GetKey(KeyCode.V) && bolaDisponivel == true)
+        if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && !playerNaParede)
         {
             chutaBola();
-            ballControl = FindObjectOfType<BallController>();
+            bolaControl = FindObjectOfType<BallController>();
             bolaDisponivel = false;
         }
         else
         {
-            if (Input.GetKey(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true)
+            if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true)
             {
-                ballControl.canBeKicked = false;
+                bolaControl.canBeKicked = false;
             }
         }
 
@@ -98,13 +98,48 @@ public class Player : Character {
             float tempSpeed = 25f;
             transform.Translate(direction * tempSpeed * Time.deltaTime);
         }
-
+        if (other.gameObject.tag == "Enemy")
+        {
+            life--;
+            checkDeath();
+            Debug.Log("Player Life: " + life);
+        }
+        if (other.gameObject.tag == "Bola")
+        {
+            Destroy(other.gameObject);
+            bolaDisponivel = true;
+            bolaOnMaxRange = false;
+            bolaControl.canBeKicked = true;
+        }
     }
 
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Wall")
+        {
+            playerNaParede = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Wall")
+        {
+            playerNaParede = false;
+        }
+    }
     private void chutaBola()
     {        
-        Instantiate(bola, (Vector2)transform.position + ballDirection, Quaternion.identity);
+        Instantiate(bolaRb, (Vector2)transform.position + bolaDir, Quaternion.identity);
     }
 
+    private void checkDeath()
+    {
+        if (life == 0)
+        {
+            isAlive = false;
+            Destroy(gameObject);
+        }
+    }
 }
 

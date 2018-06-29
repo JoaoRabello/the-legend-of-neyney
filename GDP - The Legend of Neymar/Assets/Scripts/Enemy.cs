@@ -4,23 +4,47 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public int life;
+    
     private Player player;
-    public float speed = 5f;
+    private Animator anim;
+
+    //Atributos de batalha e movimento
+    public int life;
+    public float speed = 4.8f;
     private float enemySpeed;
-	// Use this for initialization
+
+    //Atributo de movimento (posição anterior)
+    private Vector3 lastPos;
+	
+
 	void Start () {
         player = FindObjectOfType<Player>();
+        anim = GetComponent<Animator>();
         life = 5;
-        enemySpeed = Time.deltaTime * speed/5f;
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (life == 0){
-            Destroy(gameObject);
+        lastPos = transform.position;
+
+        enemySpeed = Time.deltaTime * speed/5f;
+
+        if (player.isAlive)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
+        
+            //Se a posição anterior for maior que a atual, indica movimento para a esquerda
+            if (lastPos.x >= transform.position.x)
+            {
+                anim.SetFloat("X", -1f);
+            }
+            else
+            {
+                anim.SetFloat("X", 1f);
+            }
         }
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -28,8 +52,16 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.tag == "Bola")
         {
             life--;
-            Debug.Log(life);
+            checkDeath();
+            Debug.Log("Enemy Life: " + life);
         }
     }
 
+    private void checkDeath()
+    {
+        if (life == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

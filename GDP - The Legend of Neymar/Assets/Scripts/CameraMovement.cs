@@ -9,6 +9,7 @@ public class CameraMovement : MonoBehaviour {
     [SerializeField]
     private Transform alvo;
 
+    Player player;
 
     public BoxCollider2D boundBox;
     private Vector3 minBounds;
@@ -24,6 +25,7 @@ public class CameraMovement : MonoBehaviour {
         minBounds = boundBox.bounds.min;
         maxBounds = boundBox.bounds.max;
 
+        player = FindObjectOfType<Player>();
         theCamera = GetComponent<Camera>();
         halfHeight = theCamera.orthographicSize;
         halfWidth = halfHeight * Screen.width / Screen.height;
@@ -31,12 +33,17 @@ public class CameraMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        //Muda a posição da câmera para a posição do objeto alvo (em geral o player) e soma ao recuo para evitar que a câmera fique dentro do objeto
-        transform.position = alvo.position + recuo;
+        
+        if (player.isAlive)
+        {
+            //Muda a posição da câmera para a posição do objeto alvo (em geral o player) e soma ao recuo para evitar que a câmera fique dentro do objeto
+            transform.position = alvo.position + recuo;
 
-        float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
-        float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
-        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+            float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
+            float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
+            transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+        }
+        
 
         
 	}
