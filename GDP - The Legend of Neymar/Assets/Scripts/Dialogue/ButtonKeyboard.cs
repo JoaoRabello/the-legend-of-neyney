@@ -7,7 +7,7 @@ public class ButtonKeyboard : MonoBehaviour {
 
     Button button;
     public Sprite oldSprite;
-    public Sprite OtherSprite;
+    public Sprite newSprite;
     Image image;
 
     private void Start()
@@ -21,7 +21,7 @@ public class ButtonKeyboard : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //FadeToColor(button.colors.pressedColor);
-            image.sprite = OtherSprite;
+            image.sprite = newSprite;
             button.onClick.Invoke();
         } else if (Input.GetKeyUp(KeyCode.Space))
                 {

@@ -20,9 +20,11 @@ public class DialogueManager : MonoBehaviour {
 
     public void startDialogue (Dialogue dialogue)
     {
+        
+        dialogueEnded = false;
+
         animator.SetBool("isOpen", true);
 
-        dialogueEnded = false;
         argumentos.Clear();
         
         foreach(string argumento in dialogue.argumentos)
@@ -30,7 +32,9 @@ public class DialogueManager : MonoBehaviour {
             argumentos.Enqueue(argumento);
         }
 
+        
         displayNextSentence();
+        
     }
 
     public void displayNextSentence()
@@ -44,7 +48,9 @@ public class DialogueManager : MonoBehaviour {
         string argumento = argumentos.Dequeue();
 
         StopAllCoroutines();
+
         StartCoroutine(typeSequence(argumento));
+
     }
 
     IEnumerator typeSequence(string argumento)
@@ -56,6 +62,13 @@ public class DialogueManager : MonoBehaviour {
             yield return null;
         }
     }
+
+    /*
+    IEnumerator callDialogueBox()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Time.timeScale = 0;
+    }*/
 
     public void endDialogue()
     {

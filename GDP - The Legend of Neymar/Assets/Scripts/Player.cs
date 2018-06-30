@@ -11,11 +11,13 @@ public class Player : Character {
     public bool playerNaParede = false;
     public bool bolaDisponivel = true;
     public bool bolaOnMaxRange = false;
+    public bool canChat = false;
     public Vector2 bolaDir;
     
     public BallController bolaControl;
     public Rigidbody2D bolaRb;
     private Enemy enemy;
+    private NPCDialogue npc;
 
     // Use this for initialization
     protected override void Start () {
@@ -85,7 +87,11 @@ public class Player : Character {
             }
         }
 
-        
+        if(Input.GetKeyDown(KeyCode.E) && canChat)
+        {
+            Debug.Log("Entrou no if do E");
+            npc.canDialogue = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -119,6 +125,13 @@ public class Player : Character {
             bolaOnMaxRange = false;
             bolaControl.canBeKicked = true;
         }
+
+        if (other.gameObject.tag == "NPC")
+        {
+            canChat = true;
+            npc = other.GetComponent<NPCDialogue>();
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -134,6 +147,13 @@ public class Player : Character {
         if (other.gameObject.tag == "EnemyRange")
         {
             Enemy.playerOnRange = false;
+        }
+
+        if (other.gameObject.tag == "NPC")
+        {
+            npc = other.GetComponent<NPCDialogue>();
+            npc.canDialogue = false;
+            canChat = false;
         }
     }
 

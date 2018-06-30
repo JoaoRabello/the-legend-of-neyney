@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212300720905393310}
   - component: {fileID: 50005327698500750}
   - component: {fileID: 61564872004489554}
+  - component: {fileID: 61061848687702620}
   - component: {fileID: 114329506968908252}
   - component: {fileID: 95111830954435548}
   m_Layer: 8
@@ -94,6 +95,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61061848687702620
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740463526009782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.078238964, y: -0.11434919}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.5}
+    newSize: {x: 0.4, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6008897, y: 2.7397876}
+  m_EdgeRadius: 0
 --- !u!61 &61564872004489554
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -154,6 +180,7 @@ MonoBehaviour:
   playerNaParede: 0
   bolaDisponivel: 1
   bolaOnMaxRange: 0
+  canChat: 0
   bolaDir: {x: 0, y: 0}
   bolaControl: {fileID: 114395559376927344, guid: a86ea05b22de3e648988f985b74c0268,
     type: 2}
@@ -192,7 +219,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f24e2e16b1233624c9b2a0deb7840d30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -238,7 +265,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e2dba4c3d311c4748887a6d42f6bd19b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.1764706}
   m_FlipX: 0

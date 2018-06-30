@@ -5,22 +5,20 @@ using UnityEngine;
 public class NPCDialogue : MonoBehaviour {
 
     DialogueTrigger dialogueTrigger;
-    
+
+    public bool canDialogue = false;
+
     void Start () {
         dialogueTrigger = GetComponent<DialogueTrigger>();
+        
     }
-
 
     void Update(){
-
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
+        if (canDialogue)
         {
-            Debug.Log("Está em contato, pode conversar");
+            dialogueTrigger.triggerDialogue();
+            Time.timeScale = 0;
         }
+        canDialogue = false;
     }
-
 }
