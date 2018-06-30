@@ -9,6 +9,7 @@ TagManager:
   - ColisorBola
   - Wall
   - Enemy
+  - EnemyRange
   layers:
   - Default
   - TransparentFX

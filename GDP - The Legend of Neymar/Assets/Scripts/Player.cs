@@ -15,6 +15,7 @@ public class Player : Character {
     
     public BallController bolaControl;
     public Rigidbody2D bolaRb;
+    private Enemy enemy;
 
     // Use this for initialization
     protected override void Start () {
@@ -23,7 +24,7 @@ public class Player : Character {
 
         life = 5;
 
-	}
+    }
 	
 	// Update is called once per frame
 	protected override void Update () {
@@ -58,7 +59,7 @@ public class Player : Character {
                 if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
 
                     direction += Vector2.down;
-                    bolaDir = new Vector2 (0 , -0.5f);
+                    bolaDir = new Vector2 (0 , -0.8f);
                 }
                 else {
                     if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
@@ -98,18 +99,41 @@ public class Player : Character {
             float tempSpeed = 25f;
             transform.Translate(direction * tempSpeed * Time.deltaTime);
         }
+
         if (other.gameObject.tag == "Enemy")
         {
             life--;
             checkDeath();
             Debug.Log("Player Life: " + life);
         }
+
+        if (other.gameObject.tag == "EnemyRange")
+        {
+            Enemy.playerOnRange = true;
+        }
+
         if (other.gameObject.tag == "Bola")
         {
             Destroy(other.gameObject);
             bolaDisponivel = true;
             bolaOnMaxRange = false;
             bolaControl.canBeKicked = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "EnemyRange")
+        {
+            Enemy.playerOnRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "EnemyRange")
+        {
+            Enemy.playerOnRange = false;
         }
     }
 

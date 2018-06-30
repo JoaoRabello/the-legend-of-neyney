@@ -4,36 +4,39 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    
+
     private Player player;
     private Animator anim;
 
     //Atributos de batalha e movimento
     public int life;
-    public float speed = 4.8f;
+    public float speed = 6f;
     private float enemySpeed;
+    public static bool playerOnRange;
 
     //Atributo de movimento (posição anterior)
     private Vector3 lastPos;
-	
 
-	void Start () {
+
+    void Start() {
         player = FindObjectOfType<Player>();
         anim = GetComponent<Animator>();
         life = 5;
-        
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
         lastPos = transform.position;
 
-        enemySpeed = Time.deltaTime * speed/5f;
+        enemySpeed = Time.deltaTime * speed / 5f;
 
-        if (player.isAlive)
+        if (player.isAlive && playerOnRange == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
-        
+
+            anim.SetBool("moving", true);
+            
             //Se a posição anterior for maior que a atual, indica movimento para a esquerda
             if (lastPos.x >= transform.position.x)
             {
@@ -44,7 +47,7 @@ public class Enemy : MonoBehaviour {
                 anim.SetFloat("X", 1f);
             }
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -61,7 +64,14 @@ public class Enemy : MonoBehaviour {
     {
         if (life == 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("isDead", true);
+            StartCoroutine(Destroytimer());
         }
+    }
+
+    IEnumerator Destroytimer()
+    {
+        yield return new WaitForSeconds(0.8f);
+        Destroy(gameObject);
     }
 }

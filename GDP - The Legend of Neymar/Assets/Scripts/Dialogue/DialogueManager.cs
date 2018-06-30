@@ -7,6 +7,8 @@ public class DialogueManager : MonoBehaviour {
 
     public TMP_Text dialogueText;
 
+    public Animator animator;
+
     private Queue<string> argumentos;
 
     public bool dialogueEnded;
@@ -18,6 +20,8 @@ public class DialogueManager : MonoBehaviour {
 
     public void startDialogue (Dialogue dialogue)
     {
+        animator.SetBool("isOpen", true);
+
         dialogueEnded = false;
         argumentos.Clear();
         
@@ -58,5 +62,6 @@ public class DialogueManager : MonoBehaviour {
         Debug.Log("End of Dialogue");
         Time.timeScale = 1;
         dialogueEnded = true;
+        animator.SetBool("isOpen", false);
     }
 }
