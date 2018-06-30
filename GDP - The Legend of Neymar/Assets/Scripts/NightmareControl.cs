@@ -7,15 +7,12 @@ public class NightmareControl : MonoBehaviour {
 
     DialogueTrigger dialogueTrigger;
     Button button;
-    DialogueManager dialManager;
-    Image balaoFala;
 
     private bool canStart;
 	
 	void Start() {
         dialogueTrigger = GetComponent<DialogueTrigger>();
-        dialManager = FindObjectOfType<DialogueManager>();
-        balaoFala = FindObjectOfType<Image>();
+
         canStart = true;
 	}
 
@@ -27,10 +24,6 @@ public class NightmareControl : MonoBehaviour {
             Time.timeScale = 0;
         }
         canStart = false;
-        if (dialManager.dialogueEnded == true)
-        {
-            
-        }
     }
 
     void callDialogue()

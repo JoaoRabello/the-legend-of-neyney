@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour {
     public float speed = 6f;
     private float enemySpeed;
     public static bool playerOnRange;
+    private bool isDead;
 
     //Atributo de movimento (posição anterior)
     private Vector3 lastPos;
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour {
 
         enemySpeed = Time.deltaTime * speed / 5f;
 
-        if (player.isAlive && playerOnRange == true)
+        if (player.isAlive && playerOnRange == true && isDead == false)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
 
@@ -45,6 +46,13 @@ public class Enemy : MonoBehaviour {
             else
             {
                 anim.SetFloat("X", 1f);
+            }
+        }
+        else
+        {
+            if(player.isAlive == false || playerOnRange == false)
+            {
+                anim.SetBool("moving", false);
             }
         }
 
@@ -64,6 +72,7 @@ public class Enemy : MonoBehaviour {
     {
         if (life == 0)
         {
+            isDead = true;
             anim.SetBool("isDead", true);
             StartCoroutine(Destroytimer());
         }
@@ -71,7 +80,7 @@ public class Enemy : MonoBehaviour {
 
     IEnumerator Destroytimer()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
 }

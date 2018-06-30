@@ -59,7 +59,7 @@ public class BallController : MonoBehaviour {
                 anim.SetBool("isMoving", false);
             }
         }
-        if (canBeKicked == false)
+        if (canBeKicked == false && player.isAlive)
         {
             playerPos = player.transform.position + new Vector3(0,-0.25f,0);
             transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * ballSpeed);
