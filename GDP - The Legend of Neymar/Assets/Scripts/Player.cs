@@ -17,6 +17,8 @@ public class Player : Character {
     public bool canChat = false;
     public bool canBeDamaged = true;
     public Vector2 bolaDir;
+
+    public static bool canOpenDoor = false;
     
     public BallController bolaControl;
     public Rigidbody2D bolaRb;
@@ -171,6 +173,11 @@ public class Player : Character {
         if (col.gameObject.tag == "Wall")
         {
             playerNaParede = true;
+        }
+        if (col.gameObject.tag == "Door" && canOpenDoor)
+        {
+            col.transform.Rotate(0, 0, -90);
+            canOpenDoor = false;
         }
     }
 
