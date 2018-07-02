@@ -11,6 +11,8 @@ public class Character : MonoBehaviour {
 
     //Armazena a direção
     public Vector2 direction;
+    public static bool isAttacking = false;
+    public bool isDead = false;
 
     private Animator animator;
 
@@ -37,18 +39,32 @@ public class Character : MonoBehaviour {
 
         //Se houver movimento (qualquer variável acima/abaixo de 0)
         if (direction.x != 0 || direction.y != 0)
-            //Gera as transições de movimento
+        {
             AnimaMovimento(direction);
+        }
         else
-            //Senão, mantém a Layer Idle em foco, passando o weight de Walk para 0
-            animator.SetLayerWeight(1, 0);
+        {
+            animator.SetBool("isMoving", false);
+        }
+        
+        if (isAttacking)
+        {
+            animator.SetBool("isAttacking", true);
+        }
+        else
+        {
+            animator.SetBool("isAttacking", false);
+        }
+
+        if (isDead)
+        {
+            animator.SetBool("isDead", true);
+        }
     }
 
     public void AnimaMovimento(Vector2 drct) {
 
-
-        //Layer Walk ganha o foco
-        animator.SetLayerWeight(1, 1);
+        animator.SetBool("isMoving", true);
 
         //Inica ao animator em que sentido o player parou (se parou andando para a esquerda, x = -1)
         animator.SetFloat("x", drct.x);

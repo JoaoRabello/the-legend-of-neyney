@@ -56,6 +56,7 @@ public class BallController : MonoBehaviour {
             if ((Vector2)transform.position == kickRange)
             {
                 player.bolaOnMaxRange = true;
+                Character.isAttacking = false;
                 anim.SetBool("isMoving", false);
             }
         }
@@ -75,6 +76,7 @@ public class BallController : MonoBehaviour {
             player.bolaOnMaxRange = true;
             canBeKicked = false;
             anim.SetBool("isMoving", false);
+            Character.isAttacking = false;
         }
     }
 

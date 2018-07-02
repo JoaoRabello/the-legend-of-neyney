@@ -189,7 +189,8 @@ public class Player : Character {
         }
     }
     private void chutaBola()
-    {        
+    {
+        isAttacking = true;
         Instantiate(bolaRb, (Vector2)transform.position + bolaDir, Quaternion.identity);
     }
 
@@ -198,7 +199,8 @@ public class Player : Character {
         if (life == 0)
         {
             isAlive = false;
-            Destroy(gameObject);
+            isDead = true;
+            StartCoroutine(destroyPlayer());
         }
     }
 
@@ -207,6 +209,12 @@ public class Player : Character {
         canBeDamaged = false;
         yield return new WaitForSeconds(1.5f);
         canBeDamaged = true;
+    }
+
+    IEnumerator destroyPlayer()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 
 }
