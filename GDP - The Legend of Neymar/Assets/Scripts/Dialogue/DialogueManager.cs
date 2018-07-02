@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour {
     {
         
         dialogueEnded = false;
-
+        ButtonKeyboard.canPress = true;
         animator.SetBool("isOpen", true);
 
         argumentos.Clear();
@@ -63,18 +63,18 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
-    /*
-    IEnumerator callDialogueBox()
-    {
-        yield return new WaitForSeconds(0.3f);
-        Time.timeScale = 0;
-    }*/
-
     public void endDialogue()
     {
         Debug.Log("End of Dialogue");
         Time.timeScale = 1;
         dialogueEnded = true;
         animator.SetBool("isOpen", false);
+        ButtonKeyboard.canPress = false;
+        if (GaviaoControl.canGiveBall == false)
+        {
+            GaviaoControl.canGiveBallCont++;
+            if (GaviaoControl.canGiveBallCont > 1)
+                GaviaoControl.canGiveBall = true;
+        }
     }
 }

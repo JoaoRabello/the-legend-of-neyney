@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Player : Character {
 
@@ -8,10 +9,13 @@ public class Player : Character {
 
     public bool isAlive = true;
 
+    public static bool bolaRecebida = false;
+
     public bool playerNaParede = false;
     public bool bolaDisponivel = true;
     public bool bolaOnMaxRange = false;
     public bool canChat = false;
+    public bool canBeDamaged = true;
     public Vector2 bolaDir;
     
     public BallController bolaControl;
@@ -73,7 +77,7 @@ public class Player : Character {
             }       
         }
 
-        if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && !playerNaParede)
+        if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && !playerNaParede && bolaRecebida)
         {
             chutaBola();
             bolaControl = FindObjectOfType<BallController>();
@@ -81,7 +85,7 @@ public class Player : Character {
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true)
+            if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true && bolaRecebida)
             {
                 bolaControl.canBeKicked = false;
             }
@@ -108,7 +112,12 @@ public class Player : Character {
 
         if (other.gameObject.tag == "Enemy")
         {
-            life--;
+            if (canBeDamaged)
+            {
+                life--;
+                StartCoroutine(damageCoolDown());
+            }
+            
             checkDeath();
             Debug.Log("Player Life: " + life);
         }
@@ -185,5 +194,13 @@ public class Player : Character {
             Destroy(gameObject);
         }
     }
+
+    IEnumerator damageCoolDown()
+    {
+        canBeDamaged = false;
+        yield return new WaitForSeconds(1.5f);
+        canBeDamaged = true;
+    }
+
 }
 

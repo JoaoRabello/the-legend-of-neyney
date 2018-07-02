@@ -10,6 +10,8 @@ public class ButtonKeyboard : MonoBehaviour {
     public Sprite newSprite;
     Image image;
 
+    public static bool canPress = true;
+
     private void Start()
     {
         button = GetComponent<Button>();
@@ -18,15 +20,13 @@ public class ButtonKeyboard : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canPress)
         {
-            //FadeToColor(button.colors.pressedColor);
             image.sprite = newSprite;
             button.onClick.Invoke();
-        } else if (Input.GetKeyUp(KeyCode.Space))
+        } else if (Input.GetKeyUp(KeyCode.Space) && canPress)
                 {
                     image.sprite = oldSprite;
-                    //FadeToColor(button.colors.normalColor);
                 }
 	}
 

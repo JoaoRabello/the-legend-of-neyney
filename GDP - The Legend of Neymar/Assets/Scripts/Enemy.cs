@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour {
     private float enemySpeed;
     public static bool playerOnRange;
     private bool isDead;
+    public bool canPursuit = true;
 
     //Atributo de movimento (posição anterior)
     private Vector3 lastPos;
@@ -32,7 +33,7 @@ public class Enemy : MonoBehaviour {
 
         enemySpeed = Time.deltaTime * speed / 5f;
 
-        if (player.isAlive && playerOnRange == true && isDead == false)
+        if (player.isAlive && playerOnRange == true && isDead == false && canPursuit == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed);
 
@@ -50,12 +51,28 @@ public class Enemy : MonoBehaviour {
         }
         else
         {
-            if(player.isAlive == false || playerOnRange == false)
+            if(player.isAlive == false || playerOnRange == false || canPursuit == false)
             {
                 anim.SetBool("moving", false);
             }
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            canPursuit = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            canPursuit = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
