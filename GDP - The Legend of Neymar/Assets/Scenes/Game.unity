@@ -1991,6 +1991,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &722590521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114757783711172254, guid: 005d259fb05532849a8744e700661ee3,
+    type: 2}
+  m_PrefabInternal: {fileID: 172182339}
+  m_Script: {fileID: 11500000, guid: 1df78fc2317d9b4418bb1bae08081f6c, type: 3}
 --- !u!1 &744269763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,11 +3417,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4334754306964202, guid: dda343bde24878b42814389556deb197, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 4334754306964202, guid: dda343bde24878b42814389556deb197, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.26
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4334754306964202, guid: dda343bde24878b42814389556deb197, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3441,26 +3447,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 61155055651780354, guid: dda343bde24878b42814389556deb197,
+    - target: {fileID: 114582270077708580, guid: dda343bde24878b42814389556deb197,
         type: 2}
-      propertyPath: m_Offset.x
-      value: 0.003323689
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155055651780354, guid: dda343bde24878b42814389556deb197,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.735464
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155055651780354, guid: dda343bde24878b42814389556deb197,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.06051159
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155055651780354, guid: dda343bde24878b42814389556deb197,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 1.0789769
-      objectReference: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 722590521}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dda343bde24878b42814389556deb197, type: 2}
   m_IsPrefabAsset: 0

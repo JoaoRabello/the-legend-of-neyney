@@ -95,7 +95,6 @@ public class Player : Character {
 
         if(Input.GetKeyDown(KeyCode.E) && canChat)
         {
-            Debug.Log("Entrou no if do E");
             npc.canDialogue = true;
         }
     }
@@ -117,7 +116,7 @@ public class Player : Character {
             if (canBeDamaged)
             {
                 life--;
-                StartCoroutine(damageCoolDown());
+                StartCoroutine(DamageCoolDown());
             }
             
             checkDeath();
@@ -143,6 +142,13 @@ public class Player : Character {
             npc = other.GetComponent<NPCDialogue>();
         }
 
+        if(other.gameObject.tag == "Gaviao")
+        {
+            canChat = true;
+            npc = other.GetComponent<NPCDialogue>();
+            GaviaoControl.canMove = false;
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -165,6 +171,14 @@ public class Player : Character {
             npc = other.GetComponent<NPCDialogue>();
             npc.canDialogue = false;
             canChat = false;
+        }
+
+        if(other.gameObject.tag == "Gaviao")
+        {
+            npc = other.GetComponent<NPCDialogue>();
+            npc.canDialogue = false;
+            canChat = false;
+            GaviaoControl.canMove = true;
         }
     }
 
@@ -200,18 +214,19 @@ public class Player : Character {
         {
             isAlive = false;
             isDead = true;
-            StartCoroutine(destroyPlayer());
+            StartCoroutine(DestroyPlayer());
         }
     }
 
-    IEnumerator damageCoolDown()
+
+    IEnumerator DamageCoolDown()
     {
         canBeDamaged = false;
         yield return new WaitForSeconds(1.5f);
         canBeDamaged = true;
     }
 
-    IEnumerator destroyPlayer()
+    IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
         Destroy(gameObject);

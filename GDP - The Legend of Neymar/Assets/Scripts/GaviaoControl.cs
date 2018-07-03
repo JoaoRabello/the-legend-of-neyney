@@ -6,31 +6,86 @@ public class GaviaoControl : MonoBehaviour {
 
     public static bool canGiveBall = false;
     public static int canGiveBallCont = 0;
+    private int i = 0;
 
     private Vector2 thisPos;
     private Vector2 nextPos;
     private int randomX;
     private int randomY;
     private int randomDirection;
-    private float speed = 20f;
-    private bool canMove = true;
-    private bool canMoveCollide = true;
+    private float speed = 0.5f;
+    public static bool canMove = true;
+
+    private float timeToChangeDirection;
+
+    private Animator anim;
+    public Player player;
+    private SpriteRenderer sprite;
 
 	// Use this for initialization
 	void Start () {
-		
+        anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
+        changeDirection();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         thisPos = transform.position;
+        timeToChangeDirection -= Time.deltaTime;
 
+        if (timeToChangeDirection <= 0)
+        {
+            changeDirection();
+        }
+
+        if (canMove)
+        {
+        anim.SetBool("isMoving", true);
+        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
+
+        if (canGiveBall == true && i == 0)
+        {
+            //Vector3 playerPos = player.transform.position;
+            if (player.transform.position.x <= transform.position.x)
+            {
+                anim.SetBool("giveBall", true);
+                StartCoroutine(waitAnim());
+            }
+            else
+            {
+                sprite.flipX = true;
+                anim.SetBool("giveBall", true);
+                StartCoroutine(unflip());
+            }
+            Debug.Log("Recebeu bola");
+            Player.bolaRecebida = true;
+            canGiveBall = false;
+            i++;
+        }
+	}
+
+    void changeDirection()
+    {
         randomDirection = Random.Range(1, 101);
-
         if (randomDirection <= 50)
         {
             Debug.Log("Move em x");
-            randomX = Random.Range(-2, 2);
+            randomX = Random.Range(-10, 10);
+            anim.SetFloat("y", 0);
+            if (randomX > 0)
+            {
+                anim.SetFloat("x", 1);
+            }
+            else
+            {
+                anim.SetFloat("x", -1);
+            }
             nextPos = thisPos + new Vector2(randomX, 0);
         }
         else
@@ -38,31 +93,41 @@ public class GaviaoControl : MonoBehaviour {
             if (randomDirection > 50)
             {
                 Debug.Log("Move em y");
-                randomY = Random.Range(-2, 2);
+                randomY = Random.Range(-10, 10);
+                anim.SetFloat("x", 0);
+                if (randomY > 0)
+                {
+                    anim.SetFloat("y", 1);
+                }
+                else
+                {
+                    anim.SetFloat("y", -1);
+                }
                 nextPos = thisPos + new Vector2(0, randomY);
             }
-        } 
-
-        if (canMove && canMoveCollide)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-            StartCoroutine(stop());
         }
-        
-
-        if (canGiveBall == true)
-        {
-            //Roda animação entregando a bola
-            Debug.Log("Recebeu bola");
-            Player.bolaRecebida = true;
-            canGiveBall = false;
-        }
-	}
-
-    IEnumerator stop()
-    {
-        canMove = false;
-        yield return new WaitForSeconds(1f);
-        canMove = true;
+        timeToChangeDirection = 2f;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Wall")
+        {
+            changeDirection();
+        }
+    }
+
+    IEnumerator waitAnim()
+    {
+        yield return new WaitForSeconds(3);
+        anim.SetBool("giveBall", false);
+    }
+
+    IEnumerator unflip()
+    {
+        yield return new WaitForSeconds(3);
+        sprite.flipX = false;
+        anim.SetBool("giveBall", false);
+    }
+
 }

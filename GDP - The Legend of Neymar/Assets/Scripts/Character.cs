@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Character : MonoBehaviour {
 
@@ -13,6 +14,8 @@ public class Character : MonoBehaviour {
     public Vector2 direction;
     public static bool isAttacking = false;
     public bool isDead = false;
+    public bool canMoveAgain = true;
+    private int i = 0;
 
     private Animator animator;
 
@@ -35,7 +38,10 @@ public class Character : MonoBehaviour {
     void Move() {
 
         // Calcula direções para ser usado no métoo Translate (move o objeto)
-        transform.Translate(direction * speed * Time.deltaTime);
+        if (canMoveAgain)
+        {
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
 
         //Se houver movimento (qualquer variável acima/abaixo de 0)
         if (direction.x != 0 || direction.y != 0)
@@ -60,6 +66,13 @@ public class Character : MonoBehaviour {
         {
             animator.SetBool("isDead", true);
         }
+
+        if (Player.bolaRecebida && i == 0)
+        {
+            StartCoroutine(StopMoving());
+            animator.SetBool("isPicking", true);
+            i++;
+        }
     }
 
     public void AnimaMovimento(Vector2 drct) {
@@ -70,5 +83,13 @@ public class Character : MonoBehaviour {
         animator.SetFloat("x", drct.x);
         animator.SetFloat("y", drct.y);
 
+    }
+
+    IEnumerator StopMoving()
+    {
+        canMoveAgain = false;
+        yield return new WaitForSeconds(3);
+        canMoveAgain = true;
+        animator.SetBool("isPicking", false);
     }
 }

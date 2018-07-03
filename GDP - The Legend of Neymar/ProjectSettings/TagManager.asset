@@ -12,6 +12,7 @@ TagManager:
   - EnemyRange
   - NPC
   - Door
+  - Gaviao
   layers:
   - Default
   - TransparentFX
