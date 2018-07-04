@@ -13,6 +13,7 @@ TagManager:
   - NPC
   - Door
   - Gaviao
+  - Teleporter
   layers:
   - Default
   - TransparentFX
