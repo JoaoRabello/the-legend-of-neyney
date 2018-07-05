@@ -51,7 +51,6 @@ public class GaviaoControl : MonoBehaviour {
 
         if (canGiveBall == true && i == 0)
         {
-            //Vector3 playerPos = player.transform.position;
             if (player.transform.position.x <= transform.position.x)
             {
                 anim.SetBool("giveBall", true);
@@ -63,7 +62,6 @@ public class GaviaoControl : MonoBehaviour {
                 anim.SetBool("giveBall", true);
                 StartCoroutine(unflip());
             }
-            Debug.Log("Recebeu bola");
             Player.bolaRecebida = true;
             canGiveBall = false;
             i++;
@@ -75,7 +73,6 @@ public class GaviaoControl : MonoBehaviour {
         randomDirection = Random.Range(1, 101);
         if (randomDirection <= 50)
         {
-            Debug.Log("Move em x");
             randomX = Random.Range(-10, 10);
             anim.SetFloat("y", 0);
             if (randomX > 0)
@@ -92,7 +89,6 @@ public class GaviaoControl : MonoBehaviour {
         {
             if (randomDirection > 50)
             {
-                Debug.Log("Move em y");
                 randomY = Random.Range(-10, 10);
                 anim.SetFloat("x", 0);
                 if (randomY > 0)

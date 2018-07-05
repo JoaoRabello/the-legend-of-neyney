@@ -8,15 +8,15 @@ public class ChangeAreaTP : MonoBehaviour {
     public Camera cam;
 
     //public Vector3 firstWaypoint;
-    public Vector3 destinyWaypoint;
+    public GameObject destinyWaypoint;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            
-            player.transform.position = destinyWaypoint;
-            cam.transform.position = destinyWaypoint;
+
+            player.transform.position = destinyWaypoint.transform.position;
+            cam.transform.position = destinyWaypoint.transform.position;
         }
     }
 }

@@ -2,7 +2,7 @@
 
 public class BallController : MonoBehaviour {
 
-    public float ballSpeed = 7f;       //Velocidade de movimento da bola
+    public float ballSpeed = 10f;       //Velocidade de movimento da bola
     private Player player;      //Instancia de player para receber a posição do mesmo
     private Vector2 kickDir;    //Armazena a direção do chute
     public Vector2 kickRange;  //Armazena a posição máxima do chute
@@ -24,16 +24,16 @@ public class BallController : MonoBehaviour {
         {
             kickDir.y = 0f;     //Evita bug de bola ir na diagonal após andar na vertical
             if (kickDir.x > 0)
-                range = new Vector2(2.5f, -0.25f);
+                range = new Vector2(3f, -0.5f);
             else
-                range = new Vector2(-2.55f, -0.25f);
+                range = new Vector2(-3f, -0.5f);
         }
         else
         {
             if (kickDir.y > 0)
-                range = new Vector2(0, 2.5f);
+                range = new Vector2(0, 3f);
             else
-                range = new Vector2(0, -2.5f);
+                range = new Vector2(0, -3f);
         }
 
         //Pega a posição do player, soma o range e então armazena o alcance do chute
@@ -62,7 +62,7 @@ public class BallController : MonoBehaviour {
         }
         if (canBeKicked == false && player.isAlive)
         {
-            playerPos = player.transform.position + new Vector3(0,-0.25f,0);
+            playerPos = player.transform.position + new Vector3(0,-0.5f,0);
             transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * ballSpeed);
             anim.SetBool("isMoving", true);
         }

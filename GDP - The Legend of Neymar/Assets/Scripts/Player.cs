@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Character {
 
@@ -25,6 +26,8 @@ public class Player : Character {
     private Enemy enemy;
     private NPCDialogue npc;
 
+    private EnemyBoundary enemyBounds;
+
     // Use this for initialization
     protected override void Start () {
 
@@ -37,10 +40,12 @@ public class Player : Character {
 	// Update is called once per frame
 	protected override void Update () {
 
-        GetInput();
+        if(canMoveAgain)
+        {
+            GetInput();
+        }
 
         base.Update();
-
 
 	}
 
@@ -54,14 +59,14 @@ public class Player : Character {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 
             direction += Vector2.up;
-            bolaDir = new Vector2 (0, 0.5f);
+            bolaDir = new Vector2 (0, 0.7f);
 
         }
         else {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
 
                 direction += Vector2.left; 
-                bolaDir = new Vector2 (-0.5f , -0.25f);
+                bolaDir = new Vector2 (-0.5f , -0.5f);
             }
             else {
                 if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
@@ -73,7 +78,7 @@ public class Player : Character {
                     if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
 
                         direction += Vector2.right;
-                        bolaDir = new Vector2 (0.5f , -0.25f);
+                        bolaDir = new Vector2 (0.5f , -0.5f);
                     }
                 }
             }       
@@ -109,6 +114,12 @@ public class Player : Character {
             theCam.SetBounds(bounds);
             float tempSpeed = 25f;
             transform.Translate(direction * tempSpeed * Time.deltaTime);
+
+            enemyBounds = other.GetComponent<EnemyBoundary>();
+            if (enemyBounds.haveEnemies == true)
+            {
+                Instantiate(enemyBounds.enemyPool);
+            }
         }
 
         if (other.gameObject.tag == "Enemy")
@@ -149,6 +160,11 @@ public class Player : Character {
             GaviaoControl.canMove = false;
         }
 
+        if(other.gameObject.tag == "FimJogo")
+        {
+            SceneManager.LoadScene(3);
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -179,6 +195,15 @@ public class Player : Character {
             npc.canDialogue = false;
             canChat = false;
             GaviaoControl.canMove = true;
+        }
+
+        if(other.gameObject.tag == "Bounds")
+        {
+            enemyBounds = other.GetComponent<EnemyBoundary>();
+            if (enemyBounds.haveEnemies == true)
+            {
+                Destroy(GameObject.Find("EnemyPool1(Clone)"));
+            }
         }
     }
 
@@ -214,6 +239,7 @@ public class Player : Character {
         {
             isAlive = false;
             isDead = true;
+            canMoveAgain = false;
             StartCoroutine(DestroyPlayer());
         }
     }
@@ -222,13 +248,14 @@ public class Player : Character {
     IEnumerator DamageCoolDown()
     {
         canBeDamaged = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         canBeDamaged = true;
     }
 
     IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(2);
         Destroy(gameObject);
     }
 

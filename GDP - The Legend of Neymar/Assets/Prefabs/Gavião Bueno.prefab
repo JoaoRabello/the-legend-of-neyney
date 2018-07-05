@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1961516025088716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.57, y: -1.86, z: 0}
+  m_LocalPosition: {x: 13.68, y: -0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4958150397828448}
@@ -134,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010035872, y: -0.04014635}
+  m_Offset: {x: 0.010705471, y: -0.07471514}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -145,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0175273, y: 2.4846783}
+  m_Size: {x: 1.7394342, y: 1.8347864}
   m_EdgeRadius: 0
 --- !u!95 &95081014122712050
 Animator:
@@ -202,7 +202,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     argumentos:
-    - HAJA CORACAO, AMIGO!
+    - "O meu precioso menino Neyney foi raptado. N\xE3o temos bons\r\ndibradores que
+      cheguem at\xE9 l\xE1.  "
+    - "S\xF3 uma pessoa que represente t\xE3o bem a f\xFAria do\r\npovo brasileiro
+      ap\xF3s o 7 a 1 pode resgat\xE1-lo."
+    - "Voc\xEA consegue fazer isso?"
+    - '...'
+    - "Muito bem. Eu sabia que algu\xE9m t\xE3o pistola quanto voc\xEA n\xE3o\r\ndeixaria
+      para tr\xE1s o nosso menino prod\xEDgio."
+    - "Mas lembre-se: \xE9 perigoso ir sozinho! Leve isso:"
+    - "Com a Lend\xE1ria Bola das Copas, um instrumento futebol\xEDstico\r\nm\xE1gico
+      e muito poderoso, voc\xEA ser\xE1 capaz de dibrar os seus inimigos e chegar
+      at\xE9\r\na Boca de Fumo para resgatar o menino Neyney."
+    - "Pressione V para\r\nchutar a bola e dibrar seus advers\xE1rios. "
+    - "Ao pressionar V novamente,\r\nela retornar\xE1 aos seus p\xE9s, causando danos
+      em seus advers\xE1rios, tanto na ida\r\nquanto na volta."
+    - "\xC9 essencial que voc\xEA resgate Neyney. Ele \xE9 o \xFAnico que sabe onde
+      encontrar o\r\n\xFAltimo peda\xE7o da Hexaforce e Fuleco tentar\xE1 arrancar
+      essa informa\xE7\xE3o do meu\r\nmenino da pior maneira poss\xEDvel."
+    - '...'
+    - "H\xE3? Voc\xEA n\xE3o sabe o que \xE9 a Hexaforce?"
+    - "\xC9 um item muito precioso e dividido em seis partes, cada uma correspondendo
+      a uma habilidade que apenas verdadeiros her\xF3is brasileiros podem ter: Foco,
+      For\xE7a, F\xE9, Ousadia, Alegria e Malemol\xEAncia."
+    - "O Brasil j\xE1 reuniu cinco peda\xE7os nos anos de 58, 62, 70, 94 e\r\n2002.
+      Nos resta apenas este \xFAltimo fragmento para conquistarmos a Ta\xE7a do\r\nHexa,
+      atrav\xE9s de um dom que n\xE3o \xE9 visto h\xE1 anos."
+    - "Por\xE9m, Fuleco os roubou e agora est\xE1 amea\xE7ando a vida de nosso precioso\r\nmenino,
+      para que ele revele o paradeiro do \xFAltimo peda\xE7o."
+    - "Se conseguir, Fuleco\r\nutilizar\xE1 esse poder contra o Brasil. \xC9 inadmiss\xEDvel.
+      Precisamos impedir este tatu-\r\nbola antes que Neyney ceda \xE0s torturas de
+      Fuleco. Ou pior, antes que ele possa\r\nmorrer."
+    - "Agora v\xE1! Neyney e todo o povo brasileiro precisam da sua bravura, Canarinho!"
+    - "N\xE3o podemos tomar outra goleada. Bola no p\xE9 e sorriso no rosto! Para
+      derrotar\r\nFuleco, voc\xEA precisa jogar com garra e com gosto!"
 --- !u!212 &212663519676419832
 SpriteRenderer:
   m_ObjectHideFlags: 1

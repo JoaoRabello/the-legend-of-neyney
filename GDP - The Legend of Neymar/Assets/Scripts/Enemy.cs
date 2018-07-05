@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour {
     private bool isDead;
     public bool canPursuit = true;
 
+    //public bool hasKey = false;
+
     //Atributo de movimento (posição anterior)
     private Vector3 lastPos;
 
@@ -98,6 +100,9 @@ public class Enemy : MonoBehaviour {
     IEnumerator Destroytimer()
     {
         yield return new WaitForSeconds(1);
+        //if (hasKey)
+        //{
+        //}
         Destroy(gameObject);
     }
 }

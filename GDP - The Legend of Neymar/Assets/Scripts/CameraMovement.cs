@@ -20,6 +20,8 @@ public class CameraMovement : MonoBehaviour {
     private float halfHeight;
     private float halfWidth;
 
+    
+
 
     void Start() {
         minBounds = boundBox.bounds.min;

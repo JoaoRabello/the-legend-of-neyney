@@ -37,9 +37,9 @@ GameObject:
   - component: {fileID: 4591764968242636}
   - component: {fileID: 212327007868499408}
   - component: {fileID: 50210193447083672}
-  - component: {fileID: 61632219018984086}
   - component: {fileID: 114757783711172254}
   - component: {fileID: 95401745826920070}
+  - component: {fileID: 70093989906523632}
   m_Layer: 8
   m_Name: Canarinho
   m_TagString: Player
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.45, y: 1.43, z: 0}
+  m_LocalPosition: {x: 9.68, y: 2.55, z: 0}
   m_LocalScale: {x: 5.037704, y: 5.037704, z: 5.037704}
   m_Children:
   - {fileID: 4702794741093962}
@@ -94,8 +94,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61632219018984086
-BoxCollider2D:
+--- !u!70 &70093989906523632
+CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -106,19 +106,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000007450581, y: -0.023994386}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.24}
-    newSize: {x: 0.16, y: 0.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.13560857, y: 0.19201124}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.0010266906, y: -0.016383935}
+  m_Size: {x: 0.12291823, y: 0.19411431}
+  m_Direction: 0
 --- !u!95 &95401745826920070
 Animator:
   serializedVersion: 3
@@ -148,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df78fc2317d9b4418bb1bae08081f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 3
   direction: {x: 0, y: 0}
   isDead: 0
   canMoveAgain: 1
@@ -242,7 +232,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e2dba4c3d311c4748887a6d42f6bd19b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.23137255}
   m_FlipX: 0
