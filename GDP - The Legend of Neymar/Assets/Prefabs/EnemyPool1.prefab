@@ -1412,10 +1412,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 0
 --- !u!114 &114271803452191006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1427,10 +1427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 0
 --- !u!114 &114568954935575516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1442,10 +1442,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 0
 --- !u!114 &114643949004864044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1457,10 +1457,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 0
 --- !u!114 &114787770215568658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1472,10 +1472,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 1
 --- !u!114 &114841607751625304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1487,10 +1487,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1
-  hasKey: 0
 --- !u!212 &212180739902034790
 SpriteRenderer:
   m_ObjectHideFlags: 1

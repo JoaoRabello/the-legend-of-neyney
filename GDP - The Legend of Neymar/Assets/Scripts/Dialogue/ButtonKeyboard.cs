@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class ButtonKeyboard : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string somClique;
+
+
     Button button;
     public Sprite oldSprite;
     public Sprite newSprite;
@@ -22,6 +26,7 @@ public class ButtonKeyboard : MonoBehaviour {
     void Update () {
         if (Input.GetKeyDown(KeyCode.Space) && canPress)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somClique);
             image.sprite = newSprite;
             button.onClick.Invoke();
         } else if (Input.GetKeyUp(KeyCode.Space) && canPress)

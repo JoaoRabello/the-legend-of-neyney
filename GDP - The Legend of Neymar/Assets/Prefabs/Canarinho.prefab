@@ -139,9 +139,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  pegaBola: event:/Ganhando a Bola
   direction: {x: 0, y: 0}
   isDead: 0
   canMoveAgain: 1
+  somChute: event:/Bola Chute
+  somDestranca: event:/Destrancar
+  somAlerta: "event:/Alerta A\xE7\xE3o"
+  somImpedeDeChutar: event:/Negar Chute
   isAlive: 1
   playerNaParede: 0
   bolaDisponivel: 1

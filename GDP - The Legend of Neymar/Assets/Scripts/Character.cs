@@ -7,6 +7,9 @@ public class Character : MonoBehaviour {
     [SerializeField]
     protected float speed;
 
+    [FMODUnity.EventRef]
+    public string pegaBola;
+
     //Variável para contar a vida
     protected int life;
 
@@ -70,6 +73,7 @@ public class Character : MonoBehaviour {
         if (Player.bolaRecebida && i == 0)
         {
             StartCoroutine(StopMoving());
+            FMODUnity.RuntimeManager.PlayOneShot(pegaBola);
             animator.SetBool("isPicking", true);
             i++;
         }

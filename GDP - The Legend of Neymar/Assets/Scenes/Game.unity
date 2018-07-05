@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88929cddebe51b4cb003a7c1f3b31a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somClique: "event:/Passar Di\xE1logo"
   oldSprite: {fileID: 21300000, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
   newSprite: {fileID: 21300002, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
 --- !u!114 &187711925
@@ -9006,6 +9007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514580637}
   - component: {fileID: 1514580636}
+  - component: {fileID: 1514580639}
   - component: {fileID: 1514580638}
   m_Layer: 0
   m_Name: "SonhoIntrodu\xE7\xE3o"
@@ -9054,6 +9056,28 @@ Transform:
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1514580638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: "event:/Na cadencia da desgra\xE7a"
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1514580639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

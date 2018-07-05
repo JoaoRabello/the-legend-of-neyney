@@ -76,5 +76,6 @@ public class DialogueManager : MonoBehaviour {
             if (GaviaoControl.canGiveBallCont > 1)
                 GaviaoControl.canGiveBall = true;
         }
+        NightmareControl.killNightmare = true;
     }
 }

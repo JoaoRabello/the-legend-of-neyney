@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
   canPursuit: 1

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string somMorte;
+
+
 
     private Player player;
     private Animator anim;
@@ -92,6 +96,7 @@ public class Enemy : MonoBehaviour {
         if (life == 0)
         {
             isDead = true;
+            FMODUnity.RuntimeManager.PlayOneShot(somMorte);
             anim.SetBool("isDead", true);
             StartCoroutine(Destroytimer());
         }
@@ -99,10 +104,8 @@ public class Enemy : MonoBehaviour {
 
     IEnumerator Destroytimer()
     {
+        
         yield return new WaitForSeconds(1);
-        //if (hasKey)
-        //{
-        //}
         Destroy(gameObject);
     }
 }

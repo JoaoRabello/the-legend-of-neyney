@@ -2,6 +2,11 @@
 
 public class BallController : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string somRetornoBola;
+
+    int i=0;
+
     public float ballSpeed = 10f;       //Velocidade de movimento da bola
     private Player player;      //Instancia de player para receber a posição do mesmo
     private Vector2 kickDir;    //Armazena a direção do chute
@@ -64,7 +69,10 @@ public class BallController : MonoBehaviour {
         {
             playerPos = player.transform.position + new Vector3(0,-0.5f,0);
             transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * ballSpeed);
+            if (i==0)
+                FMODUnity.RuntimeManager.PlayOneShot(somRetornoBola);
             anim.SetBool("isMoving", true);
+            i++;
         }
 
 	}

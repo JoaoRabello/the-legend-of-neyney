@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class NightmareControl : MonoBehaviour {
 
+
+    public static bool killNightmare = false;
     DialogueTrigger dialogueTrigger;
     Button button;
 
@@ -12,7 +14,6 @@ public class NightmareControl : MonoBehaviour {
 	
 	void Start() {
         dialogueTrigger = GetComponent<DialogueTrigger>();
-
         canStart = true;
 	}
 
@@ -24,6 +25,8 @@ public class NightmareControl : MonoBehaviour {
             Time.timeScale = 0;
         }
         canStart = false;
+        if (killNightmare)
+            StartCoroutine(destroyThis());
     }
 
     void callDialogue()
@@ -31,4 +34,10 @@ public class NightmareControl : MonoBehaviour {
         dialogueTrigger.triggerDialogue();
     }
     
+    IEnumerator destroyThis()
+    {
+        yield return new WaitForSeconds(5.5f);
+        
+        Destroy(gameObject);
+    }
 }

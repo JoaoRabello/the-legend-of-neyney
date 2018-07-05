@@ -4,6 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character {
 
+    [FMODUnity.EventRef]
+    public string somChute;
+
+    [FMODUnity.EventRef]
+    public string somDestranca;
+
+    [FMODUnity.EventRef]
+    public string somAlerta;
+
+    [FMODUnity.EventRef]
+    public string somImpedeDeChutar;
 
     private BoxCollider2D bounds;
     private CameraMovement theCam;
@@ -96,6 +107,13 @@ public class Player : Character {
             {
                 bolaControl.canBeKicked = false;
             }
+            else
+            {
+                if(Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && playerNaParede && bolaRecebida)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot(somImpedeDeChutar);
+                }
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.E) && canChat)
@@ -149,12 +167,14 @@ public class Player : Character {
 
         if (other.gameObject.tag == "NPC")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
         }
 
         if(other.gameObject.tag == "Gaviao")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
             GaviaoControl.canMove = false;
@@ -215,8 +235,8 @@ public class Player : Character {
         }
         if (col.gameObject.tag == "Door" && canOpenDoor)
         {
-            col.transform.Rotate(0, 0, -90);
-            canOpenDoor = false;
+            FMODUnity.RuntimeManager.PlayOneShot(somDestranca);
+            Destroy(col.gameObject);
         }
     }
 
@@ -231,6 +251,7 @@ public class Player : Character {
     {
         isAttacking = true;
         Instantiate(bolaRb, (Vector2)transform.position + bolaDir, Quaternion.identity);
+        FMODUnity.RuntimeManager.PlayOneShot(somChute);
     }
 
     private void checkDeath()
