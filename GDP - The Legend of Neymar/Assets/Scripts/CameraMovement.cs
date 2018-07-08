@@ -20,7 +20,7 @@ public class CameraMovement : MonoBehaviour {
     private float halfHeight;
     private float halfWidth;
 
-    
+    public bool insideBound = true;
 
 
     void Start() {
@@ -41,9 +41,12 @@ public class CameraMovement : MonoBehaviour {
             //Muda a posição da câmera para a posição do objeto alvo (em geral o player) e soma ao recuo para evitar que a câmera fique dentro do objeto
             transform.position = alvo.position + recuo;
 
-            float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
-            float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
-            transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+            if (insideBound)
+            {
+                float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
+                float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
+                transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+            }
         }
         
 

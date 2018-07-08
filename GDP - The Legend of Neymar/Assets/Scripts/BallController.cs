@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class BallController : MonoBehaviour {
-
-    [FMODUnity.EventRef]
-    public string somRetornoBola;
-
-    int i=0;
 
     public float ballSpeed = 10f;       //Velocidade de movimento da bola
     private Player player;      //Instancia de player para receber a posição do mesmo
@@ -17,6 +13,9 @@ public class BallController : MonoBehaviour {
     public bool canBeKicked = true; 
     private Vector3 playerPos;
 
+
+    public bool bolaOutroBound = false;
+    private Rigidbody2D colisor;
 
 	// Use this for initialization
 	void Start () {
@@ -58,6 +57,7 @@ public class BallController : MonoBehaviour {
         }
         else
         {
+            //Se a bola tiver alcançado seu range, modifica sua animação e permite que o player puxe a bola de volta
             if ((Vector2)transform.position == kickRange)
             {
                 player.bolaOnMaxRange = true;
@@ -65,14 +65,25 @@ public class BallController : MonoBehaviour {
                 anim.SetBool("isMoving", false);
             }
         }
+
         if (canBeKicked == false && player.isAlive)
         {
             playerPos = player.transform.position + new Vector3(0,-0.5f,0);
             transform.position = Vector3.MoveTowards(transform.position, playerPos, Time.deltaTime * ballSpeed);
-            if (i==0)
-                FMODUnity.RuntimeManager.PlayOneShot(somRetornoBola);
             anim.SetBool("isMoving", true);
-            i++;
+        }
+        if (bolaOutroBound)
+        {
+            colisor = GetComponent<Rigidbody2D>();
+            Destroy(colisor);
+            if(transform.position == player.transform.position + new Vector3(0, -0.5f, 0))
+            {
+                player.bolaDisponivel = true;
+                player.bolaOnMaxRange = false;
+                canBeKicked = true;
+                player.bola.sprite = player.bolaEnable;
+                Destroy(gameObject);
+            }
         }
 
 	}

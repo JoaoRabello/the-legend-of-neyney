@@ -10,7 +10,6 @@ public class NPCDialogue : MonoBehaviour {
 
     void Start () {
         dialogueTrigger = GetComponent<DialogueTrigger>();
-        
     }
 
     void Update(){

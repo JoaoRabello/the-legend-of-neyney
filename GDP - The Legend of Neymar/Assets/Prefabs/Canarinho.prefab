@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.68, y: 2.55, z: 0}
+  m_LocalPosition: {x: 9.64, y: 2.41, z: 0}
   m_LocalScale: {x: 5.037704, y: 5.037704, z: 5.037704}
   m_Children:
   - {fileID: 4702794741093962}
@@ -144,6 +144,7 @@ MonoBehaviour:
   isDead: 0
   canMoveAgain: 1
   somChute: event:/Bola Chute
+  somRetornoBola: event:/Bola Retorna
   somDestranca: event:/Destrancar
   somAlerta: "event:/Alerta A\xE7\xE3o"
   somImpedeDeChutar: event:/Negar Chute
@@ -154,6 +155,16 @@ MonoBehaviour:
   canChat: 0
   canBeDamaged: 1
   bolaDir: {x: 0, y: 0}
+  images:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  semVida: {fileID: 21300004, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
+  bola: {fileID: 0}
+  bolaDisable: {fileID: 21300008, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
+  bolaEnable: {fileID: 21300010, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
   bolaControl: {fileID: 114395559376927344, guid: a86ea05b22de3e648988f985b74c0268,
     type: 2}
   bolaRb: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}

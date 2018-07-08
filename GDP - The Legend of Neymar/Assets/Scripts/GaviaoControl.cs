@@ -116,6 +116,7 @@ public class GaviaoControl : MonoBehaviour {
     IEnumerator waitAnim()
     {
         yield return new WaitForSeconds(3);
+        player.bola.enabled = true;
         anim.SetBool("giveBall", false);
     }
 

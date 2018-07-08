@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : Character {
 
     [FMODUnity.EventRef]
     public string somChute;
+
+    [FMODUnity.EventRef]
+    public string somRetornoBola;
 
     [FMODUnity.EventRef]
     public string somDestranca;
@@ -30,7 +34,17 @@ public class Player : Character {
     public bool canBeDamaged = true;
     public Vector2 bolaDir;
 
+    //HUD
+    public Image[] images;
+    private int imageCount = 4;
+    public Sprite semVida;
+
+    public Image bola;
+    public Sprite bolaDisable;
+    public Sprite bolaEnable;
+
     public static bool canOpenDoor = false;
+
     
     public BallController bolaControl;
     public Rigidbody2D bolaRb;
@@ -43,7 +57,7 @@ public class Player : Character {
     protected override void Start () {
 
         base.Start();
-
+        bola.enabled = false;
         life = 5;
 
     }
@@ -106,6 +120,7 @@ public class Player : Character {
             if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true && bolaRecebida)
             {
                 bolaControl.canBeKicked = false;
+                FMODUnity.RuntimeManager.PlayOneShot(somRetornoBola);
             }
             else
             {
@@ -130,8 +145,9 @@ public class Player : Character {
             bounds = other.GetComponent<BoxCollider2D>();
             theCam = FindObjectOfType<CameraMovement>();
             theCam.SetBounds(bounds);
-            float tempSpeed = 25f;
-            transform.Translate(direction * tempSpeed * Time.deltaTime);
+
+            if(!bolaDisponivel)
+                bolaControl.bolaOutroBound = true;
 
             enemyBounds = other.GetComponent<EnemyBoundary>();
             if (enemyBounds.haveEnemies == true)
@@ -144,10 +160,8 @@ public class Player : Character {
         {
             if (canBeDamaged)
             {
-                life--;
-                StartCoroutine(DamageCoolDown());
+                damage();
             }
-            
             checkDeath();
             Debug.Log("Player Life: " + life);
         }
@@ -162,6 +176,7 @@ public class Player : Character {
             Destroy(other.gameObject);
             bolaDisponivel = true;
             bolaOnMaxRange = false;
+            bola.sprite = bolaEnable;
             bolaControl.canBeKicked = true;
         }
 
@@ -219,6 +234,8 @@ public class Player : Character {
 
         if(other.gameObject.tag == "Bounds")
         {
+            //theCam.insideBound = false;
+
             enemyBounds = other.GetComponent<EnemyBoundary>();
             if (enemyBounds.haveEnemies == true)
             {
@@ -250,6 +267,7 @@ public class Player : Character {
     private void chutaBola()
     {
         isAttacking = true;
+        bola.sprite = bolaDisable;
         Instantiate(bolaRb, (Vector2)transform.position + bolaDir, Quaternion.identity);
         FMODUnity.RuntimeManager.PlayOneShot(somChute);
     }
@@ -265,6 +283,14 @@ public class Player : Character {
         }
     }
 
+
+    private void damage()
+    {
+        images[imageCount].sprite = semVida;
+        life--;
+        imageCount--;
+        StartCoroutine(DamageCoolDown());
+    }
 
     IEnumerator DamageCoolDown()
     {
