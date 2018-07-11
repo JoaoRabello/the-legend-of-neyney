@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour {
 
@@ -44,17 +45,20 @@ public class Character : MonoBehaviour {
         if (canMoveAgain)
         {
             transform.Translate(direction * speed * Time.deltaTime);
+            
+            //Se houver movimento (qualquer variável acima/abaixo de 0)
+            if (direction.x != 0 || direction.y != 0)
+            {
+                AnimaMovimento(direction);
+            }
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
         }
 
-        //Se houver movimento (qualquer variável acima/abaixo de 0)
-        if (direction.x != 0 || direction.y != 0)
-        {
-            AnimaMovimento(direction);
-        }
-        else
-        {
-            animator.SetBool("isMoving", false);
-        }
+
+
         
         if (isAttacking)
         {
@@ -70,7 +74,7 @@ public class Character : MonoBehaviour {
             animator.SetBool("isDead", true);
         }
 
-        if (Player.bolaRecebida && i == 0)
+        if (Player.bolaRecebida && i == 0 && SceneManager.GetActiveScene().buildIndex == 1)
         {
             StartCoroutine(StopMoving());
             FMODUnity.RuntimeManager.PlayOneShot(pegaBola);

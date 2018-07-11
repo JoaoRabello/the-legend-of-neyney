@@ -8,12 +8,14 @@ public class PressStart : MonoBehaviour {
     [FMODUnity.EventRef]
     public string inputSound;
 
+    int i;
+
     void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter) && i == 0)
         {
             StartCoroutine(wait());
-
+            i++;
         }
 
 	}

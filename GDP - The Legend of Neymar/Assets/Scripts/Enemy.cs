@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour {
     private bool isDead;
     public bool canPursuit = true;
 
-    //public bool hasKey = false;
+    private bool canGiveDMG = true;
 
     //Atributo de movimento (posição anterior)
     private Vector3 lastPos;
@@ -69,6 +69,11 @@ public class Enemy : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            if(canGiveDMG && player.canBeDamaged)
+            {
+                player.damage();
+                player.checkDeath();
+            }
             canPursuit = false;
         }
     }
@@ -97,6 +102,7 @@ public class Enemy : MonoBehaviour {
         {
             isDead = true;
             FMODUnity.RuntimeManager.PlayOneShot(somMorte);
+            canGiveDMG = false;
             anim.SetBool("isDead", true);
             StartCoroutine(Destroytimer());
         }

@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000000456C3188 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000072805F88 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -24,79 +24,43 @@
 [LOG] SystemI::createSound                     : filename = C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 00000000456CAFD8 : node = 000000004529AEB0
-[LOG] SystemI::createSound                     : add node to async list : head = 000000001876C9C8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000456CAFD8
+[LOG] SystemI::createSound                     : setdata soundi = 000000006695B848 : node = 000000003B89D620
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000072989018.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000006695B848
 [LOG] SystemI::createSoundInternal             :     Create name='C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 4435680
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22208
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004529AFC8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000003B89D738
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Na Cadência da Desgraça', format=2, channels=2, frequency=48000, lengthbytes=1430816, lengthpcm=5019428, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.349335.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000456CAFD8
-[LOG] SoundI::getSubSound                      : sound 00000000456CAFD8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000006695B848
+[LOG] SoundI::getSubSound                      : sound 000000006695B848.  Subsound index 0 / 1
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000048FEF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005F9CF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED247E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED247E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED247E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED247E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003DE7E828
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC745E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC745E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC745E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC745E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003B385268
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - passar dialogo', format=2, channels=2, frequency=48000, lengthbytes=2080, lengthpcm=8512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189484.
-[LOG] SoundI::release                          : Na Cadência da Desgraça (00000000456CAFD8)
-[LOG] SoundI::release                          :     Na Cadência da Desgraça (000000001876CA18)
-[LOG] SoundI::release                          :     Na Cadência da Desgraça (000000001873FE88)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000048FEF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED247E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED247E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED247E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED247E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000452EFA48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - icone de acao', format=2, channels=2, frequency=48000, lengthbytes=2272, lengthpcm=6656, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.187744.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000048FEF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED247E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED247E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED247E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED247E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000452EFA48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - Ganhando a bola', format=2, channels=2, frequency=48000, lengthbytes=36640, lengthpcm=132000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.713684.
-[LOG] SoundI::release                          :  (000000003E2E9218)
-[LOG] SoundI::release                          :     SFX - passar dialogo (000000001876C1F8)
-[LOG] SoundI::release                          :  (000000003E2E94F8)
-[LOG] SoundI::release                          :     SFX - Ganhando a bola (000000001876C058)
-[LOG] SoundI::release                          :  (000000003E2E9388)
-[LOG] SoundI::release                          :     SFX - icone de acao (000000001876CA18)
+[LOG] SoundI::release                          : Na Cadência da Desgraça (000000006695B848)
+[LOG] SoundI::release                          :     Na Cadência da Desgraça (0000000019C2B838)
+[LOG] SoundI::release                          :     Na Cadência da Desgraça (000000003B99B3C8)
+[LOG] SoundI::release                          :  (0000000019DE79F8)
+[LOG] SoundI::release                          :     SFX - passar dialogo (0000000019C2B9D8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

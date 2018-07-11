@@ -165,6 +165,7 @@ MonoBehaviour:
   bola: {fileID: 0}
   bolaDisable: {fileID: 21300008, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
   bolaEnable: {fileID: 21300010, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
+  keyImg: {fileID: 0}
   bolaControl: {fileID: 114395559376927344, guid: a86ea05b22de3e648988f985b74c0268,
     type: 2}
   bolaRb: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}

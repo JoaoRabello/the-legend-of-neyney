@@ -15,7 +15,6 @@ TagManager:
   - Gaviao
   - Teleporter
   - Key
-  - FimJogo
   layers:
   - Default
   - TransparentFX

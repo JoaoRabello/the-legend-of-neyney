@@ -42,6 +42,7 @@ public class Player : Character {
     public Image bola;
     public Sprite bolaDisable;
     public Sprite bolaEnable;
+    public Image keyImg;
 
     public static bool canOpenDoor = false;
 
@@ -58,6 +59,7 @@ public class Player : Character {
 
         base.Start();
         bola.enabled = false;
+        keyImg.enabled = false;
         life = 5;
 
     }
@@ -158,10 +160,6 @@ public class Player : Character {
 
         if (other.gameObject.tag == "Enemy")
         {
-            if (canBeDamaged)
-            {
-                damage();
-            }
             checkDeath();
             Debug.Log("Player Life: " + life);
         }
@@ -193,11 +191,6 @@ public class Player : Character {
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
             GaviaoControl.canMove = false;
-        }
-
-        if(other.gameObject.tag == "FimJogo")
-        {
-            SceneManager.LoadScene(3);
         }
 
     }
@@ -272,7 +265,7 @@ public class Player : Character {
         FMODUnity.RuntimeManager.PlayOneShot(somChute);
     }
 
-    private void checkDeath()
+    public void checkDeath()
     {
         if (life == 0)
         {
@@ -284,7 +277,7 @@ public class Player : Character {
     }
 
 
-    private void damage()
+    public void damage()
     {
         images[imageCount].sprite = semVida;
         life--;
@@ -302,7 +295,7 @@ public class Player : Character {
     IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
         Destroy(gameObject);
     }
 

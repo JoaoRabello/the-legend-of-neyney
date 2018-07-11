@@ -14,7 +14,7 @@ public class ButtonKeyboard : MonoBehaviour {
     public Sprite newSprite;
     Image image;
 
-    public static bool canPress = true;
+    public static bool canPress = false;
 
     private void Start()
     {
