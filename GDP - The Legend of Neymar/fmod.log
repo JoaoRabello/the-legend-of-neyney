@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000050530928 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000004E31ECB8 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -17,178 +17,41 @@
 [LOG] LiveUpdate::init                         : 
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[ERR] FMOD_OS_Net_Listen                       : bind failed 10048
-[ERR] AsyncManager::asyncThreadLoop            : System::update returned error 43.
-[ERR] FMOD_OS_Net_Listen                       : bind failed 10048
-[ERR] AsyncManager::asyncThreadLoop            : System::update returned error 43.
-[ERR] system_release                           : Failed to call stopRecordCommands during system release (Error code 43)
-[ERR] system_release                           : Failed to call flushCommands during system release (Error code 43)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[ERR] FMOD_OS_Net_Listen                       : bind failed 10048
-[ERR] FMOD_OS_Net_Listen                       : bind failed 10048
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] System::create                           : Header version = 1.10.06. Current version = 1.10.06.
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] Manager::init                            : maxchannels = 1024 studioflags = 00000008 flags 00000000 extradriverdata 0000000000000000.
-[LOG] SystemI::init                            : Initialize version=11006 (95384), maxchannels=1024, flags=0x00020000
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 10.67ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000049B2AA68 isAsync 1 updatePeriod 0.02
-[LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
-[LOG] AsyncManager::init                       : done
-[LOG] PlaybackSystem::init                     : 
-[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
-[LOG] PlaybackSystem::init                     : done
-[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
-[LOG] Manager::init                            : done.
+[LOG] Profile::init                            : Profiler listening on port: 9264
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] SystemI::createSound                     : filename = C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001596C808 : node = 0000000009B28450
-[LOG] SystemI::createSound                     : add node to async list : head = 0000000015A3F578.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001596C808
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000000000F8D3428 : node = 0000000019A22120
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000019A1F138.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000000F8D3428
 [LOG] SystemI::createSoundInternal             :     Create name='C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 4435680
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22208
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000009B28568
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000019A22238
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Na Cadência da Desgraça', format=2, channels=2, frequency=48000, lengthbytes=1430816, lengthpcm=5019428, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.349335.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001596C808
-[LOG] SoundI::getSubSound                      : sound 000000001596C808.  Subsound index 0 / 1
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000492B9F48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - passar dialogo', format=2, channels=2, frequency=48000, lengthbytes=2080, lengthpcm=8512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189484.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000492B9F48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - icone de acao', format=2, channels=2, frequency=48000, lengthbytes=2272, lengthpcm=6656, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.187744.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000492B9F48
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - Ganhando a bola', format=2, channels=2, frequency=48000, lengthbytes=36640, lengthpcm=132000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.713684.
-[LOG] SoundI::release                          : Na Cadência da Desgraça (000000001596C808)
-[LOG] SoundI::release                          :     Na Cadência da Desgraça (0000000049923938)
-[LOG] SoundI::release                          :     Na Cadência da Desgraça (000000001596BDE8)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000492B7158
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - Chute', format=2, channels=2, frequency=48000, lengthbytes=2944, lengthpcm=12000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.238617.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000049601D08
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - Bola - Voltando', format=2, channels=2, frequency=48000, lengthbytes=5312, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.242371.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4435680
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 22208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004D1AF5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEC98EE4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEC98EE480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEC98EE580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEC98EE640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000049601D08
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX - Inimigo desaparece', format=2, channels=2, frequency=48000, lengthbytes=7712, lengthpcm=30000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.283569.
-[LOG] SoundI::release                          :  (0000000049B42D88)
-[LOG] SoundI::release                          :     SFX - icone de acao (00000000509081A8)
-[LOG] SoundI::release                          :  (0000000049B43068)
-[LOG] SoundI::release                          :     SFX - passar dialogo (0000000049923AD8)
-[LOG] SoundI::release                          :  (0000000049B42EF8)
-[LOG] SoundI::release                          :     SFX - Ganhando a bola (0000000050908348)
-[LOG] SoundI::release                          :  (0000000049918538)
-[LOG] SoundI::release                          :     SFX - Chute (0000000049923938)
-[LOG] SoundI::release                          :  (00000000499186A8)
-[LOG] SoundI::release                          :     SFX - Bola - Voltando (00000000509084E8)
-[LOG] SoundI::release                          :  (0000000049918818)
-[LOG] SoundI::release                          :     SFX - Inimigo desaparece (0000000050908688)
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000000F8D3428
+[LOG] SoundI::getSubSound                      : sound 000000000F8D3428.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Na Cadência da Desgraça (000000000F8D3428)
+[LOG] SoundI::release                          :     Na Cadência da Desgraça (0000000019A1F328)
+[LOG] SoundI::release                          :     Na Cadência da Desgraça (000000000F8D30C8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
