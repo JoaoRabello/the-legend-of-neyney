@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour {
     public int life;
     public float speed = 6f;
     private float enemySpeed;
-    public static bool playerOnRange;
+    public bool playerOnRange;
     private bool isDead;
     public bool canPursuit = true;
 

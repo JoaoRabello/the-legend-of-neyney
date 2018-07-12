@@ -16,6 +16,7 @@ TagManager:
   - Teleporter
   - Key
   - Boss
+  - EnemyPool
   layers:
   - Default
   - TransparentFX

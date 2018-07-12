@@ -166,7 +166,7 @@ public class Player : Character {
 
         if (other.gameObject.tag == "EnemyRange")
         {
-            Enemy.playerOnRange = true;
+            other.gameObject.GetComponentInParent<Enemy>().playerOnRange = true;
         }
 
         if (other.gameObject.tag == "Bola")
@@ -199,7 +199,7 @@ public class Player : Character {
     {
         if (other.gameObject.tag == "EnemyRange")
         {
-            Enemy.playerOnRange = true;
+            other.gameObject.GetComponentInParent<Enemy>().playerOnRange = true;
         }
     }
 
@@ -207,7 +207,7 @@ public class Player : Character {
     {
         if (other.gameObject.tag == "EnemyRange")
         {
-            Enemy.playerOnRange = false;
+            other.gameObject.GetComponentInParent<Enemy>().playerOnRange = false;
         }
 
         if (other.gameObject.tag == "NPC")
@@ -231,7 +231,7 @@ public class Player : Character {
             enemyBounds = other.GetComponent<EnemyBoundary>();
             if (enemyBounds.haveEnemies == true)
             {
-                Destroy(GameObject.Find("EnemyPool1(Clone)"));
+                Destroy(GameObject.FindGameObjectWithTag("EnemyPool"));
             }
         }
     }
@@ -325,7 +325,7 @@ public class Player : Character {
     IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
         Destroy(gameObject);
     }
 

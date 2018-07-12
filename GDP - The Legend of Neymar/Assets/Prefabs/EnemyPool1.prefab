@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4770908177587858}
   m_Layer: 0
   m_Name: EnemyPool1
-  m_TagString: Untagged
+  m_TagString: EnemyPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1415,6 +1415,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!114 &114271803452191006
 MonoBehaviour:
@@ -1430,6 +1431,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!114 &114568954935575516
 MonoBehaviour:
@@ -1445,6 +1447,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!114 &114643949004864044
 MonoBehaviour:
@@ -1460,6 +1463,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!114 &114787770215568658
 MonoBehaviour:
@@ -1475,6 +1479,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!114 &114841607751625304
 MonoBehaviour:
@@ -1490,6 +1495,7 @@ MonoBehaviour:
   somMorte: event:/Morte Inimigo
   life: 3
   speed: 5
+  playerOnRange: 0
   canPursuit: 1
 --- !u!212 &212180739902034790
 SpriteRenderer:

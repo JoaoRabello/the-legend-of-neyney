@@ -142,7 +142,7 @@ public class BossController : MonoBehaviour {
         isAttacking = true;
         yield return new WaitForSeconds(2);
         canAttack = true;
-        miraAtaque = player.position * 5;
+        miraAtaque = player.position * 10;
         Debug.Log("Atacaaaaar!");
     }
 
