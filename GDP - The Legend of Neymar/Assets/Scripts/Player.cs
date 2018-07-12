@@ -60,7 +60,7 @@ public class Player : Character {
         base.Start();
         bola.enabled = false;
         keyImg.enabled = false;
-        life = 5;
+        life = 4;
 
     }
 	
@@ -227,7 +227,6 @@ public class Player : Character {
 
         if(other.gameObject.tag == "Bounds")
         {
-            //theCam.insideBound = false;
 
             enemyBounds = other.GetComponent<EnemyBoundary>();
             if (enemyBounds.haveEnemies == true)
