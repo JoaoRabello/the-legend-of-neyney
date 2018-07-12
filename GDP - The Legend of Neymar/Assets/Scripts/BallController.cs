@@ -90,7 +90,7 @@ public class BallController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "NPC" || collision.gameObject.tag == "Gaviao")
+        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "NPC" || collision.gameObject.tag == "Gaviao" || collision.gameObject.tag == "Boss")
         {
             player.bolaOnMaxRange = true;
             canBeKicked = false;

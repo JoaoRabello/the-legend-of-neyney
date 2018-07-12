@@ -60,7 +60,7 @@ public class Player : Character {
         base.Start();
         bola.enabled = false;
         keyImg.enabled = false;
-        life = 4;
+        life = 5;
 
     }
 	
@@ -247,6 +247,11 @@ public class Player : Character {
             FMODUnity.RuntimeManager.PlayOneShot(somDestranca);
             Destroy(col.gameObject);
         }
+        if (col.gameObject.tag == "Boss")
+        {
+            checkDeath();
+            Debug.Log("Player Life: " + life);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D col)
@@ -287,8 +292,34 @@ public class Player : Character {
     IEnumerator DamageCoolDown()
     {
         canBeDamaged = false;
+        StartCoroutine(Blinker());
         yield return new WaitForSeconds(1f);
         canBeDamaged = true;
+    }
+
+    IEnumerator Blinker()
+    {
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+
+            yield return new WaitForSeconds(0.2f);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
+
+            yield return new WaitForSeconds(0.2f);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+
+            yield return new WaitForSeconds(0.2f);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
+
+            yield return new WaitForSeconds(0.2f);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+
+            yield return new WaitForSeconds(0.2f);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
     }
 
     IEnumerator DestroyPlayer()

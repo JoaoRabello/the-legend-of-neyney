@@ -15,6 +15,7 @@ TagManager:
   - Gaviao
   - Teleporter
   - Key
+  - Boss
   layers:
   - Default
   - TransparentFX

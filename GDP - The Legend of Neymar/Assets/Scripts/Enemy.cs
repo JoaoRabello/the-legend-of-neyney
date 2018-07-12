@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour {
 
     private Player player;
     private Animator anim;
+    private GameObject bola;
 
     //Atributos de batalha e movimento
     public int life;
@@ -91,6 +92,8 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.tag == "Bola")
         {
             life--;
+            bola = other.gameObject;
+            StartCoroutine(Blinker());
             checkDeath();
             Debug.Log("Enemy Life: " + life);
         }
@@ -106,6 +109,19 @@ public class Enemy : MonoBehaviour {
             anim.SetBool("isDead", true);
             StartCoroutine(Destroytimer());
         }
+    }
+
+    IEnumerator Blinker()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(1f, 0, 0);
+
+        //Tentativa de knockback
+        Vector2 knockback = (transform.position - bola.transform.position).normalized;
+        GetComponent<Rigidbody2D>().AddForce(knockback * 5f);
+
+        yield return new WaitForSeconds(0.2f);
+
+        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
     }
 
     IEnumerator Destroytimer()

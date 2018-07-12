@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 223637509358201156}
   - component: {fileID: 114320004900069028}
   - component: {fileID: 114242782554042194}
+  - component: {fileID: 114030171363135380}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -237,6 +238,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114030171363135380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1610130547703110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d8e57a3885a374bb1a3add0c287bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114068440639467446
 MonoBehaviour:
   m_ObjectHideFlags: 1

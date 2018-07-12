@@ -7,9 +7,9 @@ public class BossController : MonoBehaviour {
     public Transform[] waypoints;
     private float speed = 15f;
     private float bossSpeed;
-    public int life = 5;
+    public int life;
 
-    private int i = 0 ;
+    private int i = 0;
     private int final;
 
     private bool outOfPatterns = false;
@@ -22,14 +22,16 @@ public class BossController : MonoBehaviour {
     private int controlaStart = 0;
     private bool goToStart = false;
 
+    private bool canBeDamaged = false;
+
     public Transform player;
     Player playerGO;
     private Vector3 miraAtaque;
 	
     // Use this for initialization
 	void Start () {
-         //followPattern(1);
-	}
+        life = 5;
+    }
 
     // Update is called once per frame
     void Update() {
@@ -40,14 +42,14 @@ public class BossController : MonoBehaviour {
         {
             if (goToStart)
             {
-                transform.position = Vector3.MoveTowards(transform.position, waypoints[10].transform.position, bossSpeed);
+                transform.position = Vector3.MoveTowards(transform.position, waypoints[30].transform.position, bossSpeed);
                 terminouWay();
             }
             else
             {
                 if (!isAttacking && !tonto)
                 {
-                    if (i < 11 && !outOfPatterns)
+                    if (i < 31 && !outOfPatterns)
                     {
                         transform.position = Vector3.MoveTowards(transform.position, waypoints[i].transform.position, bossSpeed);
                         terminouWay();
@@ -93,7 +95,7 @@ public class BossController : MonoBehaviour {
             StartCoroutine(chargeAttack());
             atAttackPoint = true;
         }
-        if(transform.position == waypoints[10].transform.position)
+        if(transform.position == waypoints[30].transform.position)
         {
             Debug.Log("Está no inicio sim");
             atStartPoint = true;
@@ -122,6 +124,14 @@ public class BossController : MonoBehaviour {
                 i = 6;
                 final = 10;
                 break;
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+                i = 10;
+                final = 30;
+                break;
             default:
                 break;
         }
@@ -145,8 +155,24 @@ public class BossController : MonoBehaviour {
         if(other.gameObject.tag == "Player")
         {
             playerGO = FindObjectOfType<Player>();
-            playerGO.checkDeath();
-            playerGO.damage();
+            if (playerGO.canBeDamaged)
+            {
+                playerGO.damage();
+                playerGO.checkDeath();
+            }
+        }
+        if(other.gameObject.tag == "Bola" && canBeDamaged)
+        {
+            life--;
+            checkDeath();
+        }
+    }
+
+    void checkDeath()
+    {
+        if(life == 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -154,10 +180,11 @@ public class BossController : MonoBehaviour {
     {
         tonto = true;
         canAttack = false;
+        canBeDamaged = true;
 
         yield return new WaitForSeconds(3.5f);
 
-        int random = Random.Range(1, 10);
+        int random = Random.Range(1, 15);
         followPattern(random);
 
         goToStart = true;
@@ -165,12 +192,14 @@ public class BossController : MonoBehaviour {
         tonto = false;
         isAttacking = false;
         outOfPatterns = false;
+
+        canBeDamaged = false;
     }
 
     IEnumerator chargePatternStart()
     {
         yield return new WaitForSeconds(1.5f);
-        int random = Random.Range(1, 10);
+        int random = Random.Range(1, 15);
         followPattern(random);
         atStartPoint = false;
         controlaStart = 0;
