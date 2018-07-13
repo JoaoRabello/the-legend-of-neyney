@@ -350,7 +350,7 @@ public class Player : Character {
     IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
         Destroy(gameObject);
     }
 
