@@ -68,7 +68,7 @@ public class Character : MonoBehaviour {
             {
                 if (isDashing == true)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, dashDirection, speed * 4 * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, dashDirection, speed * 3 * Time.deltaTime);
                     canDashInput = false;
                 }
             }
@@ -128,7 +128,9 @@ public class Character : MonoBehaviour {
     IEnumerator Dashing()
     {
         isDashing = true;
+        animator.SetBool("isDashing", true);
         yield return new WaitForSeconds(0.3f);
+        animator.SetBool("isDashing", false);
         isDashing = false;
         canDash = false;
         StartCoroutine(DashCooldown());

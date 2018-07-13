@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 114757783711172254}
   - component: {fileID: 95401745826920070}
   - component: {fileID: 70093989906523632}
-  - component: {fileID: 114174240272395248}
   m_Layer: 8
   m_Name: Canarinho
   m_TagString: Player
@@ -55,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.67, y: 2.47, z: 0}
+  m_LocalPosition: {x: 9.6, y: 2.45, z: 0}
   m_LocalScale: {x: 5.037704, y: 5.037704, z: 5.037704}
   m_Children:
   - {fileID: 4702794741093962}
@@ -128,17 +127,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114174240272395248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852322496337008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d8e57a3885a374bb1a3add0c287bac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114757783711172254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,6 +141,7 @@ MonoBehaviour:
   speed: 3
   pegaBola: event:/Ganhando a Bola
   direction: {x: 0, y: 0}
+  dashDirection: {x: 0, y: 0}
   isDead: 0
   canMoveAgain: 1
   somChute: event:/Bola Chute
