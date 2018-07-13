@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1299749522074688}
+  m_IsPrefabAsset: 1
+--- !u!1 &1299749522074688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4242475769849570}
+  - component: {fileID: 114356133300344624}
+  - component: {fileID: 114731820865206754}
+  - component: {fileID: 114882310844193830}
+  m_Layer: 0
+  m_Name: "SonhoIntrodu\xE7\xE3o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4242475769849570
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299749522074688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49.99, y: -0.41, z: -6.048526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114356133300344624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299749522074688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e0062bf13c5894887435a8fd8a6320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    argumentos:
+    - "P- por favor!\r\nMe- me ajude!\r"
+    - 'Eu sou um prisioneiro na Boca de Fumo. Meu nome e Neyney. O terrivel Fuleco
+      sumiu com todos os outros jogadores da selecao. '
+    - "Apenas eu restei... Ele quebrou a minha perna... Nao posso mais jogar!\r"
+    - Fuleco e seus amigos tomaram o Morro do Periquito e nao deixam ninguem subir
+      para me resgatar.
+    - 'Acredito que ele esta querendo roubar o ultimo pedaco da Hexaforce e deve me
+      usar de refem para isso. '
+    - "Talvez ele ate me mate, se for necessario para conquistar esta ultima parte
+      do artefato.\r"
+    - "Estou triste e carente de carinho... Sinto aqui no peito um vazio em mim.\r"
+    - "Tenho fe que voce conseguira me resgatar.\r\nDeus e TOP!"
+    - Me ajude!
+--- !u!114 &114731820865206754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299749522074688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59479532cefd94840951238959e5855a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114882310844193830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299749522074688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: "event:/Na cadencia da desgra\xE7a"
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

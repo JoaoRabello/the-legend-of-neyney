@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TelaInicial.unity
     guid: 690312b66098b594ea23bec9958d5254
   - enabled: 1
+    path: Assets/Scenes/Pesadelo.unity
+    guid: 4064638bee95f17499f2348731da2f5e
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

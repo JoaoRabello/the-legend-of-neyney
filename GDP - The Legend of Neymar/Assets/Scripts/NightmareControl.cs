@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NightmareControl : MonoBehaviour {
@@ -36,8 +37,8 @@ public class NightmareControl : MonoBehaviour {
     
     IEnumerator destroyThis()
     {
-        yield return new WaitForSeconds(5.5f);
-        
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(2);
         Destroy(gameObject);
     }
 }

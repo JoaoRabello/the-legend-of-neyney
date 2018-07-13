@@ -92,7 +92,7 @@ public class Character : MonoBehaviour {
             animator.SetBool("isDead", true);
         }
 
-        if (Player.bolaRecebida && i == 0 && SceneManager.GetActiveScene().buildIndex == 1)
+        if (Player.bolaRecebida && i == 0 && SceneManager.GetActiveScene().buildIndex == 2)
         {
             StartCoroutine(StopMoving());
             FMODUnity.RuntimeManager.PlayOneShot(pegaBola);

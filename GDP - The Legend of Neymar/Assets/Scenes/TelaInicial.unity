@@ -268,6 +268,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1240930953}
   - {fileID: 1045572776}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -305,13 +306,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1307446865}
-  - {fileID: 1240930953}
   m_Father: {fileID: 961908318}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 12.299988}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045572777
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 1240930955}
   - component: {fileID: 1240930954}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: Creditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,18 +510,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240930952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 811789124}
-  m_Father: {fileID: 1045572776}
-  m_RootOrder: 1
+  m_Father: {fileID: 961908318}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0000019073, y: 41.2}
-  m_SizeDelta: {x: 225.53, y: 50}
+  m_AnchoredPosition: {x: -8.1, y: 51}
+  m_SizeDelta: {x: 274.82, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240930954
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\xA9Grupo II - GDP"
+  m_text: "\xA9 GRUPO II GDP"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 46541d1809bdd6b448d325b8708f9d9d, type: 2}
   m_sharedMaterial: {fileID: 21428115709502822, guid: 46541d1809bdd6b448d325b8708f9d9d,
@@ -552,8 +552,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4290032846
+  m_fontColor: {r: 0.8113208, g: 0.7079922, b: 0.7079922, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -570,11 +570,11 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_fontSizeMin: 10
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 513
@@ -610,10 +610,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1240930954}
-    characterCount: 15
+    characterCount: 14
     spriteCount: 0
     spaceCount: 3
-    wordCount: 5
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_textAlignment: 513
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -806,8 +806,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664445957}
-  - component: {fileID: 1664445956}
   - component: {fileID: 1664445958}
+  - component: {fileID: 1664445956}
   m_Layer: 0
   m_Name: PRESSSTART
   m_TagString: Untagged
