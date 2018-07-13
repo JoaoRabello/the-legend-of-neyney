@@ -86,29 +86,54 @@ public class Player : Character {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 
             direction += Vector2.up;
+            if (canDashInput || dashInput == 1)
+            {
+                dashDirection = (Vector2)transform.position + Vector2.up;
+                dashInput = 1;
+            }
             bolaDir = new Vector2 (0, 0.7f);
 
         }
         else {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
 
-                direction += Vector2.left; 
+                direction += Vector2.left;
+                if(canDashInput || dashInput == 2)
+                {
+                    dashDirection = (Vector2)transform.position + Vector2.left;
+                    dashInput = 2;
+                }
                 bolaDir = new Vector2 (-0.5f , -0.5f);
             }
             else {
                 if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
 
                     direction += Vector2.down;
+                    if(canDashInput || dashInput == 3)
+                    {
+                        dashDirection = (Vector2)transform.position + Vector2.down;
+                        dashInput = 3;
+                    }
                     bolaDir = new Vector2 (0 , -0.8f);
                 }
                 else {
                     if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
 
                         direction += Vector2.right;
+                        if(canDashInput || dashInput == 4)
+                        {
+                            dashDirection = (Vector2)transform.position + Vector2.right;
+                            dashInput = 4;
+                        }
                         bolaDir = new Vector2 (0.5f , -0.5f);
                     }
                 }
             }       
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Dash();
         }
 
         if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && !playerNaParede && bolaRecebida)

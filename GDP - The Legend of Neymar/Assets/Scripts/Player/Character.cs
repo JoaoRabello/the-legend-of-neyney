@@ -13,13 +13,19 @@ public class Character : MonoBehaviour {
 
     //Variável para contar a vida
     protected int life;
+    
 
     //Armazena a direção
     public Vector2 direction;
+    public Vector2 dashDirection;
     public static bool isAttacking = false;
     public bool isDead = false;
     public bool canMoveAgain = true;
     private int i = 0;
+    protected bool isDashing = false;
+    protected bool canDash = true;
+    protected bool canDashInput = true;
+    protected int dashInput;
 
     private Animator animator;
 
@@ -44,17 +50,29 @@ public class Character : MonoBehaviour {
         // Calcula direções para ser usado no métoo Translate (move o objeto)
         if (canMoveAgain)
         {
-            transform.Translate(direction * speed * Time.deltaTime);
-            
-            //Se houver movimento (qualquer variável acima/abaixo de 0)
-            if (direction.x != 0 || direction.y != 0)
+            if(isDashing == false)
             {
-                AnimaMovimento(direction);
+                transform.Translate(direction * speed * Time.deltaTime);
+            
+                //Se houver movimento (qualquer variável acima/abaixo de 0)
+                if (direction.x != 0 || direction.y != 0)
+                {
+                    AnimaMovimento(direction);
+                }
+                else
+                {
+                    animator.SetBool("isMoving", false);
+                }
             }
             else
             {
-                animator.SetBool("isMoving", false);
+                if (isDashing == true)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, dashDirection, speed * 4 * Time.deltaTime);
+                    canDashInput = false;
+                }
             }
+            
         }
 
 
@@ -83,6 +101,12 @@ public class Character : MonoBehaviour {
         }
     }
 
+    protected void Dash()
+    {
+        if(canDash == true)
+            StartCoroutine(Dashing());
+    }
+
     public void AnimaMovimento(Vector2 drct) {
 
         animator.SetBool("isMoving", true);
@@ -99,5 +123,22 @@ public class Character : MonoBehaviour {
         yield return new WaitForSeconds(3);
         canMoveAgain = true;
         animator.SetBool("isPicking", false);
+    }
+
+    IEnumerator Dashing()
+    {
+        isDashing = true;
+        yield return new WaitForSeconds(0.3f);
+        isDashing = false;
+        canDash = false;
+        StartCoroutine(DashCooldown());
+        canDashInput = true;
+        dashInput = 0;
+    }
+
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canDash = true;
     }
 }
