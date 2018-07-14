@@ -1,7 +1,172 @@
 fileFormatVersion: 2
 guid: 78c62e106698f8049b886d7f204b37f1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Fuleco-Sheet_0
+    21300002: Fuleco-Sheet_1
+    21300004: Fuleco-Sheet_2
+    21300006: Fuleco-Sheet_3
+    21300008: Fuleco-Sheet_4
+    21300010: Fuleco-Sheet_5
+    21300012: Fuleco-Sheet_6
+    21300014: Fuleco-Sheet_7
+    21300016: Fuleco-Sheet_8
+    21300018: Fuleco-Sheet_9
+    21300020: Fuleco-Sheet_10
+    21300022: Fuleco-Sheet_11
+    21300024: Fuleco-Sheet_12
+    21300026: Fuleco-Sheet_13
+    21300028: Fuleco-Sheet_14
+    21300030: Fuleco-Sheet_15
+    21300032: Fuleco-Sheet_16
+    21300034: Fuleco-Sheet_17
+    21300036: Fuleco-Sheet_18
+    21300038: Fuleco-Sheet_19
+    21300040: Fuleco-Sheet_20
+    21300042: Fuleco-Sheet_21
+    21300044: Fuleco-Sheet_22
+    21300046: Fuleco-Sheet_23
+    21300048: Fuleco-Sheet_24
+    21300050: Fuleco-Sheet_25
+    21300052: Fuleco-Sheet_26
+    21300054: Fuleco-Sheet_27
+    21300056: Fuleco-Sheet_28
+    21300058: Fuleco-Sheet_29
+    21300060: Fuleco-Sheet_30
+    21300062: Fuleco-Sheet_31
+    21300064: Fuleco-Sheet_32
+    21300066: Fuleco-Sheet_33
+    21300068: Fuleco-Sheet_34
+    21300070: Fuleco-Sheet_35
+    21300072: Fuleco-Sheet_36
+    21300074: Fuleco-Sheet_37
+    21300076: Fuleco-Sheet_38
+    21300078: Fuleco-Sheet_39
+    21300080: Fuleco-Sheet_40
+    21300082: Fuleco-Sheet_41
+    21300084: Fuleco-Sheet_42
+    21300086: Fuleco-Sheet_43
+    21300088: Fuleco-Sheet_44
+    21300090: Fuleco-Sheet_45
+    21300092: Fuleco-Sheet_46
+    21300094: Fuleco-Sheet_47
+    21300096: Fuleco-Sheet_48
+    21300098: Fuleco-Sheet_49
+    21300100: Fuleco-Sheet_50
+    21300102: Fuleco-Sheet_51
+    21300104: Fuleco-Sheet_52
+    21300106: Fuleco-Sheet_53
+    21300108: Fuleco-Sheet_54
+    21300110: Fuleco-Sheet_55
+    21300112: Fuleco-Sheet_56
+    21300114: Fuleco-Sheet_57
+    21300116: Fuleco-Sheet_58
+    21300118: Fuleco-Sheet_59
+    21300120: Fuleco-Sheet_60
+    21300122: Fuleco-Sheet_61
+    21300124: Fuleco-Sheet_62
+    21300126: Fuleco-Sheet_63
+    21300128: Fuleco-Sheet_64
+    21300130: Fuleco-Sheet_65
+    21300132: Fuleco-Sheet_66
+    21300134: Fuleco-Sheet_67
+    21300136: Fuleco-Sheet_68
+    21300138: Fuleco-Sheet_69
+    21300140: Fuleco-Sheet_70
+    21300142: Fuleco-Sheet_71
+    21300144: Fuleco-Sheet_72
+    21300146: Fuleco-Sheet_73
+    21300148: Fuleco-Sheet_74
+    21300150: Fuleco-Sheet_75
+    21300152: Fuleco-Sheet_76
+    21300154: Fuleco-Sheet_77
+    21300156: Fuleco-Sheet_78
+    21300158: Fuleco-Sheet_79
+    21300160: Fuleco-Sheet_80
+    21300162: Fuleco-Sheet_81
+    21300164: Fuleco-Sheet_82
+    21300166: Fuleco-Sheet_83
+    21300168: Fuleco-Sheet_84
+    21300170: Fuleco-Sheet_85
+    21300172: Fuleco-Sheet_86
+    21300174: Fuleco-Sheet_87
+    21300176: Fuleco-Sheet_88
+    21300178: Fuleco-Sheet_89
+    21300180: Fuleco-Sheet_90
+    21300182: Fuleco-Sheet_91
+    21300184: Fuleco-Sheet_92
+    21300186: Fuleco-Sheet_93
+    21300188: Fuleco-Sheet_94
+    21300190: Fuleco-Sheet_95
+    21300192: Fuleco-Sheet_96
+    21300194: Fuleco-Sheet_97
+    21300196: Fuleco-Sheet_98
+    21300198: Fuleco-Sheet_99
+    21300200: Fuleco-Sheet_100
+    21300202: Fuleco-Sheet_101
+    21300204: Fuleco-Sheet_102
+    21300206: Fuleco-Sheet_103
+    21300208: Fuleco-Sheet_104
+    21300210: Fuleco-Sheet_105
+    21300212: Fuleco-Sheet_106
+    21300214: Fuleco-Sheet_107
+    21300216: Fuleco-Sheet_108
+    21300218: Fuleco-Sheet_109
+    21300220: Fuleco-Sheet_110
+    21300222: Fuleco-Sheet_111
+    21300224: Fuleco-Sheet_112
+    21300226: Fuleco-Sheet_113
+    21300228: Fuleco-Sheet_114
+    21300230: Fuleco-Sheet_115
+    21300232: Fuleco-Sheet_116
+    21300234: Fuleco-Sheet_117
+    21300236: Fuleco-Sheet_118
+    21300238: Fuleco-Sheet_119
+    21300240: Fuleco-Sheet_120
+    21300242: Fuleco-Sheet_121
+    21300244: Fuleco-Sheet_122
+    21300246: Fuleco-Sheet_123
+    21300248: Fuleco-Sheet_124
+    21300250: Fuleco-Sheet_125
+    21300252: Fuleco-Sheet_126
+    21300254: Fuleco-Sheet_127
+    21300256: Fuleco-Sheet_128
+    21300258: Fuleco-Sheet_129
+    21300260: Fuleco-Sheet_130
+    21300262: Fuleco-Sheet_131
+    21300264: Fuleco-Sheet_132
+    21300266: Fuleco-Sheet_133
+    21300268: Fuleco-Sheet_134
+    21300270: Fuleco-Sheet_135
+    21300272: Fuleco-Sheet_136
+    21300274: Fuleco-Sheet_137
+    21300276: Fuleco-Sheet_138
+    21300278: Fuleco-Sheet_139
+    21300280: Fuleco-Sheet_140
+    21300282: Fuleco-Sheet_141
+    21300284: Fuleco-Sheet_142
+    21300286: Fuleco-Sheet_143
+    21300288: Fuleco-Sheet_144
+    21300290: Fuleco-Sheet_145
+    21300292: Fuleco-Sheet_146
+    21300294: Fuleco-Sheet_147
+    21300296: Fuleco-Sheet_148
+    21300298: Fuleco-Sheet_149
+    21300300: Fuleco-Sheet_150
+    21300302: Fuleco-Sheet_151
+    21300304: Fuleco-Sheet_152
+    21300306: Fuleco-Sheet_153
+    21300308: Fuleco-Sheet_154
+    21300310: Fuleco-Sheet_155
+    21300312: Fuleco-Sheet_156
+    21300314: Fuleco-Sheet_157
+    21300316: Fuleco-Sheet_158
+    21300318: Fuleco-Sheet_159
+    21300320: Fuleco-Sheet_160
+    21300322: Fuleco-Sheet_161
+    21300324: Fuleco-Sheet_162
+    21300326: Fuleco-Sheet_163
+    21300328: Fuleco-Sheet_164
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -82,7 +247,3307 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fuleco-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7299deb5c93e4f74fa60b7a357c032f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a2a8df14e20384ebef40af7da789d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007501cf96738f049a7d65cbf08e3ef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa07aee905570f04da1cae748f673d82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3776d132dc71d8e4e91eac2045298b27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3247601a95e3141b782dbabbd5187c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 364
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74522ab686531fa48841fc0438c33a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 338
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c087ddfdc31d5c46a7bdec80d658e42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 338
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c79079f91dd59e4b848d1d02a28304b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 338
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f25efa75d252064a8d02e25f9b1e2f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 338
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f05c6fe27335834dbb95950fc31139c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 338
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac66fe6b20b4b70408616aaff0d40f3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 338
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a917843c708906d4f9245d45c1a86e94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 338
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcc3260df5a6c047abefc47a52e6bf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 338
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25159a8c3bfaff43908bb981d19cf8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 338
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdf529b4927c0b468d4f66ba6275824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 338
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8266cd3fc3995b64b8326fc1c5833ad0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64b28f072e93f24fae260bc89ec14b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afc974137592ea4eaad7436269c92eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6349dfa4b63f564686020e509f43c80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f993d5c5f320e7c4b862fa8023305ca2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48a3c7fabb51e545903462e5e4c9529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e126d152ce6d44943be90176bb404588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9ccd7ba6c7ee54b88a2d9084eb666d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 312
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cc691727aed164d8617203c712dab5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231a08d902e3d7949bb4d897b9284f85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24c8aaba35adac46bfd6cbc7995a581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 286
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458ff0bff95416c4cb813560dea92a79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f236a8ba55363840ad7b1ac5efadf04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b00aa1ca0a40524487636cff62b37f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7556fbea506d5f4cad50d0e12589368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 286
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2240be8c09b9aea43b24bc106202eb5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 286
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafab14076b98064dbaa4fcbdd959ea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34791363528ad948bfbc43cef6a71a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1cddcb2b66e6340917a7f503a9e068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 260
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d52aef24212fb4c8eff9600025416b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6852866b1dcc7054ca2231c18055899a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71baa1b72c1ca524998f5455d05cdf99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4524f98999bb84aac3cf3dcae58894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 260
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8939053a31e5c54499b5e2bb40395b60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 260
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d3c8ba49f30344182991c0570be9df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ce07eb3529de14fa49e3c05177e985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4987e553dd939a84f9c8f53e7ef146e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 234
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd59382283e4054087c236f3211d9d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6a311171cab704b9b8600e39f9d2d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a3d64d49d6e824f804ac1afb34d3be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c186fee43ba27418f2a10e1ca87890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 234
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bb21f8cc8fe784aabb7f5e5067a2b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 234
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dab16bccdd42e40a67ed71a00ffe93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 208
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6797c5b06c96d44b552f7d7c4824e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 208
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2035b6c3d830aea4cb5de433f4e63e03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 208
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d4b3f318d9fdc47b0ca9026e02acd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 208
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74aa8b1fe7e035a488ea9d47cbb7aef4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 208
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c305dc3f3a747e448a1ce505da13916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 208
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412389d26cf8b374499fcc88cc3ff915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 208
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99681dc9af0dbec49aa24b6d22d786c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 208
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee1fd0a784a7594d977f63edb39cbdf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 208
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3678cb54314b60449848338f79d689b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 182
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6373700aba1dbe4439e3ef22b713709f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 182
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0e549a79664824d87a3a4a5ad95310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 182
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cf21d2c4fddd148844c8096230f34b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 182
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7cd3b4b05698740bc7bb1b56bceba2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 182
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1e6c53e4322934bb5555d53407dd10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 182
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9b7513751f5c2478fa43c9c970e7c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 182
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85df6b17db98c3a4bbef94fd5ecdd56b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 182
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f947e274c3f261543bf5c53ddd90fe0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 182
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3455353fb1b88843b3587c2c123235b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 156
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fa957c0797e6e41ab21594638c766a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 156
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cb98fa1269ad34185d500ee7fa5fb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 156
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cf92dbf4915a74ebe4e4b1333e2852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 156
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ec84dab5c87334b94101ff75da3bf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 156
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fdc622ea25b1d4bb2422b96e0a29ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 156
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944ad655e22c8f6488d4944df450fc5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 156
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb20b7dde924eba4da62d0333891375d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 156
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a72a6dd852abf48be25c6ecc2d1015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 156
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bb01b8d3bb0cd42926fd775b52a86d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 130
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd5c0511d187b54bae33b5c1e1aac34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 130
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3328d4da47d82314fa700a066d17b291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 130
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f77fa4ac68d4e4db8afdaf1819c034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 130
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57baa6ad217116940a255d060f694c6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 130
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69f11369856d624388d4720a74e01af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 130
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd1c1c8a26f3a748b98b0e957edf473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 130
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81e3049db2e303499370276941b38bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 130
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58bd24baa7371f4b9855794d694823c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 130
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a29f790a5045b40ae48697478633df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc00f5d3fb52844dacd024276d5a43e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037e33087fb21cf40ac1b936d1efe0cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51b7f390b2189043bf76aea86662cdf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d5ca4c0318e0e4793b14769d0d86d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4c6309db1496e4a9365d9b06c46e77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 104
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b365683d6c02404bbf4e500f7542c44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000a2cd0fccb0349bc0fc72cc89f286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 104
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc25fa6d6ff0b114ebfc83e8df1e2435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd715a01a0b81aa4d808def59ae6bd71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 104
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76f0ab31c6010140a40b76297f66046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecaa92e311ac4e469ce4e211d018cc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 104
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299b31d3b524909478c3c9b49ae7d6e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 104
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d330a86d591274c9c4d9341ae26777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 104
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40628fee47b19194f91f76c25b212cfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 104
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ecd61a6e086b04f8805e4839eaf426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 104
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3452f85c757e1e14fb785b15d3aff55f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 78
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca529410293a35948bc1a36dbe14bcbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 78
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c08ea5540fa9d4fb533f8a2f39b7db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 78
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d757ee8a5a6404e459087c4104e39cf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 78
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd87ad230a8d2bd4f924952131cc92f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 78
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fdae7d79433f846afbad46f0457a99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677f7190654161844a66afc638ce5e6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 78
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ccd24f338d5f14a9520e93da2fa019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613554d5cc4ea52439b9fa3af8468ff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 78
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ded11b93da87b4b8851a9cce6d85c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3029f205d4a9f49b482dc0d073ba86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 78
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c26185aa7bd0b4787ebd422b7ec427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf7ec50f6c6ff0459956483998fe2a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 78
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f97208ce997b44186a27526615a64f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 78
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18324bdfb8172584db1c06e3d6a73762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 78
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadd438bca987804a81772dd82a67351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 78
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332538fbfebf5ba4dbe4bb646ac578ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 52
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b731b9f0401204db84f9b895c7f9b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 52
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0568e0b5fe8454e82c97273668003b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 52
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72761026f3e0c934f95c13bc0d774b61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 52
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264d615eff92087458bb94240468d464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 52
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0279962bbae56b04883acbb6bcb4902f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 52
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335309ba05cc199498b552db0d976a57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 52
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960e0a92f445b74a840d29e6a32cd7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 52
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3a051a7891a9447aec079cdae2699b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 52
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99945b2bea0872499501384ad65632b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 52
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374a0524a7c109b41a4d66a58cada7be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 52
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c44fef82013c6442b04136b5a0ec66b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 52
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4049aacc3edde4daaaab8a16cf2a78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 52
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b9f575b8b5b6246a989c05cb30662a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 52
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5162da29813b63941b1e66e7e4cd670d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 52
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b163f4b66fcf1044b9e50564feb8f710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 52
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a7361442f37884ebe0ae26ce641903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 26
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558405d6c334699409c9b332d1690af5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa9f132a77d7204ebc542dff68a7f0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 26
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fe95feb49e0f347841a76f9b36906e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 26
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750a96c057136994094db25e72c9892a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 26
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1b225afdda6394ea208f3cd119bc28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 26
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cebf15403849f4ab09a1fdbd38f5cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 26
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4903e9fd15bbb44b56729ce056273e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 26
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f601daad4d3a424e8f4eb2556aa249b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 26
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d1bd38824ba2045b852b2e994a70af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 26
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a32a0f6f6dec0478c39080e43ebaee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 26
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a169d5c97a593641832edd08c46cea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 26
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a63615fb25163e4d8d8c1d2854874a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 26
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d7587a289ec414f9716015360bb050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 26
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e882a388615edef4995755398b7f32b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 26
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92ef427885728b42bebdf11dd5e0943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 26
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280e540780f0c7149b64612cd1963eee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f064a1cb830d2cc43a21d6bbf29e4640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6492a7a64b159cf45a636e58c960aba6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa0e87033272c14d8374ed6ab51397f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552db55dec9af574c9bc8dc3a7f457c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2c8f20ce14e744cad10197fce98f4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84490e4e15b0ab4d89a749483437b80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be723145547d7e418f785e61684f64c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4b7c9c1eab29a4fb1a23c49e22acf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9708bd9040a5b45a389096408be002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052c3ff4e62468a4cb919faf99fe71d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e341a42352657d243819a6f1340dc166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568e030e8b1f2a448bb686f9c799c1bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e932ac2ba082d24b9ae6c8ac4ce623e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74122850dbd6e4d8da4be4e0d6c59e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38612b7d0386cfb4e8ae5673cc092b1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuleco-Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 0
+        width: 2
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c53fa67214df44782135c6e777e6db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
