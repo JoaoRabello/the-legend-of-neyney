@@ -18,6 +18,9 @@ TagManager:
   - Boss
   - EnemyPool
   - Box
+  - CutiaRange
+  - BoundToca
+  - Abismo
   layers:
   - Default
   - TransparentFX
@@ -31,8 +34,8 @@ TagManager:
   - ColisorBola
   - Ranges
   - Bola
-  - 
-  - 
+  - Cutia
+  - CutiaParede
   - 
   - 
   - 

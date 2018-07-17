@@ -21,6 +21,7 @@ public class CameraMovement : MonoBehaviour {
     private float halfWidth;
 
     public bool insideBound = true;
+    public bool insideToca = true;
 
 
     void Start() {
@@ -39,18 +40,14 @@ public class CameraMovement : MonoBehaviour {
         if (player.isAlive)
         {
             //Muda a posição da câmera para a posição do objeto alvo (em geral o player) e soma ao recuo para evitar que a câmera fique dentro do objeto
-            transform.position = alvo.position + recuo;
 
-            if (insideBound)
-            {
+            transform.position = alvo.position + recuo;
+                halfHeight = theCamera.orthographicSize;
+                halfWidth = halfHeight * Screen.width / Screen.height;
                 float clampedX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
                 float clampedY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
                 transform.position = new Vector3(clampedX, clampedY, transform.position.z);
-            }
         }
-        
-
-        
 	}
 
     public void SetBounds(BoxCollider2D newBounds) {

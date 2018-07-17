@@ -5,29 +5,29 @@ using UnityEngine;
 public class CutiaController : MonoBehaviour
 {
 
-    public static bool canGiveBall = false;
-    public static int canGiveBallCont = 0;
-    private int i = 0;
-
     private Vector2 thisPos;
     private Vector2 nextPos;
     private int randomX;
     private int randomY;
     private int randomDirection;
-    private float speed = 0.5f;
-    public static bool canMove = true;
+    private float speed = 3f;
+    public bool canMove = true;
+
+    public bool playerOnRange = false;
+    public bool runToToca = false;
 
     private float timeToChangeDirection;
 
     private Animator anim;
     public Player player;
-    private SpriteRenderer sprite;
+    private BoxCollider2D col;
+    public Transform toca;
 
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();
+        col = GetComponent<BoxCollider2D>();
         changeDirection();
     }
 
@@ -42,58 +42,75 @@ public class CutiaController : MonoBehaviour
             changeDirection();
         }
 
-        if (canMove)
+        if (canMove && playerOnRange == false && runToToca == false)
         {
             anim.SetBool("isMoving", true);
             transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
         }
         else
         {
+            if (runToToca || playerOnRange)
+            {
+                changeDirection();
+                transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
+                if(runToToca)
+                    col.enabled = false;
+            }
+            else
+            {
+                anim.SetBool("isMoving", false);
+            }
+        }
+        if (transform.position == toca.transform.position)
+        {
+            runToToca = false;
+            col.enabled = true;
             anim.SetBool("isMoving", false);
         }
     }
 
-    void changeDirection()
+    public void changeDirection()
     {
-        randomDirection = Random.Range(1, 101);
-        if (randomDirection <= 50)
+        if (playerOnRange || runToToca)
         {
-            randomX = Random.Range(-10, 10);
-            anim.SetFloat("y", 0);
-            if (randomX > 0)
-            {
-                anim.SetFloat("x", 1);
-            }
-            else
-            {
-                anim.SetFloat("x", -1);
-            }
-            nextPos = thisPos + new Vector2(randomX, 0);
+            speed = 10;
+            nextPos = toca.transform.position;
+            runToToca = true;
         }
         else
         {
-            if (randomDirection > 50)
+            speed = 3;
+            randomDirection = Random.Range(1, 101);
+            if (randomDirection <= 50)
             {
-                randomY = Random.Range(-10, 10);
-                anim.SetFloat("x", 0);
-                if (randomY > 0)
+                randomX = Random.Range(-10, 10);
+                if (randomX > 0)
                 {
-                    anim.SetFloat("y", 1);
+                    anim.SetFloat("X", 1);
                 }
                 else
                 {
-                    anim.SetFloat("y", -1);
+                    anim.SetFloat("X", -1);
                 }
-                nextPos = thisPos + new Vector2(0, randomY);
+                nextPos = thisPos + new Vector2(randomX, 0);
+            }
+            else
+            {
+                if (randomDirection > 50)
+                {
+                    randomY = Random.Range(-10, 10);
+                    nextPos = thisPos + new Vector2(0, randomY);
+                }
             }
         }
-        timeToChangeDirection = 2f;
+        timeToChangeDirection = 1.5f;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Wall")
         {
+            anim.SetBool("isMoving", false);
             changeDirection();
         }
     }

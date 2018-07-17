@@ -140,7 +140,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTimeBtwSpawns: 0.01
-  echo: {fileID: 1699658062526948, guid: 637b212a797356f48bbf077237452d03, type: 2}
+  echoUp: {fileID: 1346710659269368, guid: 34efb3cd1fe8b254986964ecd07c8610, type: 2}
+  echoDown: {fileID: 1699658062526948, guid: 637b212a797356f48bbf077237452d03, type: 2}
+  echoRight: {fileID: 1744328348239926, guid: b047944a9570de24b8f0fa288abc60f8, type: 2}
+  echoLeft: {fileID: 1943792646050982, guid: 112e9395f7fcfa144b2126762e106ae3, type: 2}
   player: {fileID: 114757783711172254}
 --- !u!114 &114757783711172254
 MonoBehaviour:
@@ -165,6 +168,7 @@ MonoBehaviour:
   somDestranca: event:/Destrancar
   somAlerta: "event:/Alerta A\xE7\xE3o"
   somImpedeDeChutar: event:/Negar Chute
+  camGO: {fileID: 0}
   isAlive: 1
   playerNaParede: 0
   bolaDisponivel: 1

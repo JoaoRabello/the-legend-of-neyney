@@ -22,6 +22,7 @@ public class Player : Character {
 
     private BoxCollider2D bounds;
     private CameraMovement theCam;
+    public Camera camGO;
 
     public bool isAlive = true;
 
@@ -46,6 +47,7 @@ public class Player : Character {
 
     public static bool canOpenDoor = false;
 
+    private BoxCollider2D abismo;
     
     public BallController bolaControl;
     public Rigidbody2D bolaRb;
@@ -167,11 +169,13 @@ public class Player : Character {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //Bounds
         if (other.gameObject.tag == "Bounds")
         {
-            //Reconhece o novo bound em contato e seta os bounds da camera para o novo bound, movendo o player para solucionar um bug
+            //Reconhece o novo bound em contato e seta os bounds da camera para o novo bound
             bounds = other.GetComponent<BoxCollider2D>();
             theCam = FindObjectOfType<CameraMovement>();
+            theCam.insideBound = true;
             theCam.SetBounds(bounds);
 
             if(!bolaDisponivel)
@@ -184,17 +188,43 @@ public class Player : Character {
             }
         }
 
+        //Inimigo
         if (other.gameObject.tag == "Enemy")
         {
             checkDeath();
             Debug.Log("Player Life: " + life);
         }
 
+        //Range do inimigo
         if (other.gameObject.tag == "EnemyRange")
         {
             other.gameObject.GetComponentInParent<Enemy>().playerOnRange = true;
         }
 
+        //Range da cutia
+        if (other.gameObject.tag == "CutiaRange")
+        {
+            other.gameObject.GetComponentInParent<CutiaController>().playerOnRange = true;
+            other.gameObject.GetComponentInParent<CutiaController>().runToToca = true;
+            other.gameObject.GetComponentInParent<CutiaController>().changeDirection();
+        }
+
+        //Bound da cutia
+        if (other.gameObject.tag == "BoundToca")
+        {
+            camGO.orthographicSize = 2f;
+
+            theCam.insideToca = true;
+            theCam.insideBound = false;
+            bounds = other.GetComponent<BoxCollider2D>();
+            theCam = FindObjectOfType<CameraMovement>();
+            theCam.SetBounds(bounds);
+
+            if (!bolaDisponivel)
+                bolaControl.bolaOutroBound = true;
+        }
+
+        //Bola
         if (other.gameObject.tag == "Bola")
         {
             Destroy(other.gameObject);
@@ -204,6 +234,7 @@ public class Player : Character {
             bolaControl.canBeKicked = true;
         }
 
+        //NPC
         if (other.gameObject.tag == "NPC")
         {
             FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
@@ -211,6 +242,7 @@ public class Player : Character {
             npc = other.GetComponent<NPCDialogue>();
         }
 
+        //Gaviao
         if(other.gameObject.tag == "Gaviao")
         {
             FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
@@ -236,6 +268,19 @@ public class Player : Character {
             other.gameObject.GetComponentInParent<Enemy>().playerOnRange = false;
         }
 
+        //Range da cutia
+        if (other.gameObject.tag == "CutiaRange")
+        {
+            other.gameObject.GetComponentInParent<CutiaController>().playerOnRange = false;
+        }
+
+        //Bound da cutia
+        if (other.gameObject.tag == "BoundToca")
+        {
+            camGO.orthographicSize = 4f;
+            theCam.insideToca = false;
+        }
+
         if (other.gameObject.tag == "NPC")
         {
             npc = other.GetComponent<NPCDialogue>();
@@ -253,7 +298,7 @@ public class Player : Character {
 
         if(other.gameObject.tag == "Bounds")
         {
-
+            theCam.insideBound = false;
             enemyBounds = other.GetComponent<EnemyBoundary>();
             if (enemyBounds.haveEnemies == true)
             {
@@ -269,16 +314,25 @@ public class Player : Character {
         {
             playerNaParede = true;
         }
+
         if (col.gameObject.tag == "Door" && canOpenDoor)
         {
             FMODUnity.RuntimeManager.PlayOneShot(somDestranca);
             keyImg.enabled = false;
             Destroy(col.gameObject);
         }
+
         if (col.gameObject.tag == "Boss")
         {
             checkDeath();
             Debug.Log("Player Life: " + life);
+        }
+
+        if (col.gameObject.tag == "Abismo" && isDashing)
+        {
+            abismo = col.gameObject.GetComponent<BoxCollider2D>();
+            abismo.enabled = false;
+            StartCoroutine(ColisaoRetorna());
         }
     }
 
@@ -315,6 +369,12 @@ public class Player : Character {
         life--;
         imageCount--;
         StartCoroutine(DamageCoolDown());
+    }
+
+    IEnumerator ColisaoRetorna()
+    {
+        yield return new WaitForSeconds(0.1f);
+        abismo.enabled = true;
     }
 
     IEnumerator DamageCoolDown()
