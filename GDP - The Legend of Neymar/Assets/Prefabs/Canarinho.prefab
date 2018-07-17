@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114757783711172254}
   - component: {fileID: 95401745826920070}
   - component: {fileID: 70093989906523632}
+  - component: {fileID: 114038663695547346}
   m_Layer: 8
   m_Name: Canarinho
   m_TagString: Player
@@ -55,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.6, y: 2.45, z: 0}
-  m_LocalScale: {x: 5.037704, y: 5.037704, z: 5.037704}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4702794741093962}
   m_Father: {fileID: 0}
@@ -127,6 +128,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114038663695547346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1852322496337008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d94ab428f23b874e9c077c1dd015daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwSpawns: 0.01
+  echo: {fileID: 1699658062526948, guid: 637b212a797356f48bbf077237452d03, type: 2}
+  player: {fileID: 114757783711172254}
 --- !u!114 &114757783711172254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,6 +159,7 @@ MonoBehaviour:
   dashDirection: {x: 0, y: 0}
   isDead: 0
   canMoveAgain: 1
+  isDashing: 0
   somChute: event:/Bola Chute
   somRetornoBola: event:/Bola Retorna
   somDestranca: event:/Destrancar
@@ -170,6 +186,7 @@ MonoBehaviour:
   bolaControl: {fileID: 114395559376927344, guid: a86ea05b22de3e648988f985b74c0268,
     type: 2}
   bolaRb: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}
+  enemyKilled: 0
 --- !u!212 &212327007868499408
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -53,6 +53,7 @@ public class Player : Character {
     private NPCDialogue npc;
 
     private EnemyBoundary enemyBounds;
+    public int enemyKilled = 0;
 
     // Use this for initialization
     protected override void Start () {
@@ -257,6 +258,7 @@ public class Player : Character {
             if (enemyBounds.haveEnemies == true)
             {
                 Destroy(GameObject.FindGameObjectWithTag("EnemyPool"));
+                enemyKilled = 0;
             }
         }
     }
@@ -270,6 +272,7 @@ public class Player : Character {
         if (col.gameObject.tag == "Door" && canOpenDoor)
         {
             FMODUnity.RuntimeManager.PlayOneShot(somDestranca);
+            keyImg.enabled = false;
             Destroy(col.gameObject);
         }
         if (col.gameObject.tag == "Boss")

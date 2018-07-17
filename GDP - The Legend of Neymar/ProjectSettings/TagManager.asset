@@ -17,6 +17,7 @@ TagManager:
   - Key
   - Boss
   - EnemyPool
+  - Box
   layers:
   - Default
   - TransparentFX

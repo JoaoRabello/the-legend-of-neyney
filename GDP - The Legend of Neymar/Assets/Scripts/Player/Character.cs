@@ -22,7 +22,7 @@ public class Character : MonoBehaviour {
     public bool isDead = false;
     public bool canMoveAgain = true;
     private int i = 0;
-    protected bool isDashing = false;
+    public bool isDashing = false;
     protected bool canDash = true;
     protected bool canDashInput = true;
     protected int dashInput;

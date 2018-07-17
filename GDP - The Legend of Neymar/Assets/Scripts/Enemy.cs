@@ -30,8 +30,6 @@ public class Enemy : MonoBehaviour {
     void Start() {
         player = FindObjectOfType<Player>();
         anim = GetComponent<Animator>();
-        life = 5;
-
     }
 
     // Update is called once per frame
@@ -128,6 +126,7 @@ public class Enemy : MonoBehaviour {
     {
         
         yield return new WaitForSeconds(1);
+        player.enemyKilled++;
         Destroy(gameObject);
     }
 }

@@ -139,13 +139,13 @@ TextureImporter:
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79da10001485f7242b94009549f52f26
+      spriteID: 5a1c7fa1880fb914586a75b410b92230
       vertices: []
       indices: 
       edges: []
@@ -159,13 +159,13 @@ TextureImporter:
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b040517e3767cfa4bb99e7e0e63a8659
+      spriteID: 9e28a027813fa9e42afaf2335e29eec6
       vertices: []
       indices: 
       edges: []
@@ -179,13 +179,13 @@ TextureImporter:
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f55479b34662844a978b1941904dc04
+      spriteID: a2255ca404cd2b74b9fe8a2b3ddc20c4
       vertices: []
       indices: 
       edges: []
@@ -199,13 +199,53 @@ TextureImporter:
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dcaeea338ab42049b59d64f9a3f5b5c
+      spriteID: 67b845b1a3a5009439fed24a2128e9ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 84
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07537713955d1394f908b5dcfceda21e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 84
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac2afe2a3e9a354689e589967aa0cb3
       vertices: []
       indices: 
       edges: []
@@ -214,18 +254,18 @@ TextureImporter:
       name: cutia-Sheet_6
       rect:
         serializedVersion: 2
-        x: 3
+        x: 51
         y: 84
         width: 19
-        height: 13
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e80575e1aa2260459a9e27c96bd5de3
+      spriteID: 1ceb88df69472cf438e20c59e33bfd68
       vertices: []
       indices: 
       edges: []
@@ -234,18 +274,18 @@ TextureImporter:
       name: cutia-Sheet_7
       rect:
         serializedVersion: 2
-        x: 27
+        x: 75
         y: 84
-        width: 19
+        width: 20
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac469a8296ec0474d949d3eec21e7a04
+      spriteID: 786e4ed04a9018943851eaf5d7de7f1a
       vertices: []
       indices: 
       edges: []
@@ -254,18 +294,18 @@ TextureImporter:
       name: cutia-Sheet_8
       rect:
         serializedVersion: 2
-        x: 51
+        x: 99
         y: 84
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09c8c1aba6b6e44cbcb5b5bd7cc6b68
+      spriteID: 414b3d28c0e8daf419f4e0d01224690c
       vertices: []
       indices: 
       edges: []
@@ -274,18 +314,18 @@ TextureImporter:
       name: cutia-Sheet_9
       rect:
         serializedVersion: 2
-        x: 75
-        y: 84
-        width: 20
+        x: 3
+        y: 70
+        width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a10f8c670857ddb4c87929d3ab4e5be4
+      spriteID: b638a706e30dbe44b965fb041fa540bd
       vertices: []
       indices: 
       edges: []
@@ -294,18 +334,58 @@ TextureImporter:
       name: cutia-Sheet_10
       rect:
         serializedVersion: 2
-        x: 99
-        y: 84
-        width: 19
+        x: 27
+        y: 70
+        width: 18
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f24a9933641cbfb4085970107a1d01a0
+      spriteID: 65ab902b256e5f34287575f6c973a7eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 70
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca417ba8e5e70b4a99d72a3d07e33e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 71
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5085b0abc62d34a9597ed36cede8cd
       vertices: []
       indices: 
       edges: []
@@ -314,18 +394,18 @@ TextureImporter:
       name: cutia-Sheet_13
       rect:
         serializedVersion: 2
-        x: 3
-        y: 70
-        width: 19
-        height: 13
+        x: 2
+        y: 56
+        width: 18
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5218093d3ae670c4299f47212dacfda0
+      spriteID: a8337625896cfed449fdd27099eea2e1
       vertices: []
       indices: 
       edges: []
@@ -334,18 +414,18 @@ TextureImporter:
       name: cutia-Sheet_14
       rect:
         serializedVersion: 2
-        x: 27
-        y: 70
-        width: 18
-        height: 13
+        x: 26
+        y: 56
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c79f46dc98cb5d94cad26982b4f54066
+      spriteID: ba0ff9bd70306424c9bcba150cfab82d
       vertices: []
       indices: 
       edges: []
@@ -354,18 +434,18 @@ TextureImporter:
       name: cutia-Sheet_15
       rect:
         serializedVersion: 2
-        x: 52
-        y: 70
-        width: 18
-        height: 13
+        x: 50
+        y: 56
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0974a8deb73c634499ebfb4622219b30
+      spriteID: ff7e0ff3b6dfac94290a3ae0ddc432d1
       vertices: []
       indices: 
       edges: []
@@ -374,18 +454,78 @@ TextureImporter:
       name: cutia-Sheet_16
       rect:
         serializedVersion: 2
-        x: 74
-        y: 70
-        width: 18
-        height: 13
+        x: 76
+        y: 56
+        width: 13
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae3bc1b026b27f49ad6d935451c996a
+      spriteID: 81a30da0fbb04824e91d9ece51caa591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 56
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d0d005048cd7549afa2244b21acfaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 56
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb4d39da651117478bf2c1a2b50129b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 56
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1545ba6f4091e6348aeecf3870ca8f5a
       vertices: []
       indices: 
       edges: []
@@ -395,17 +535,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 56
-        width: 18
-        height: 13
+        y: 42
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2fe26acd1c3774e8ca7770bf6be7e0
+      spriteID: 0055e1c1957f739459c40961ff0b3c62
       vertices: []
       indices: 
       edges: []
@@ -415,17 +555,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 26
-        y: 56
-        width: 17
-        height: 13
+        y: 42
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6b0ee0e42483eb4eb9855c7df6305e7
+      spriteID: 503b9d8c091d7704495c374299ac63ab
       vertices: []
       indices: 
       edges: []
@@ -435,17 +575,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 56
-        width: 17
-        height: 13
+        y: 42
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1937a256a532764fa277635fdd50e17
+      spriteID: 4c5b6cf3717512040852a935a3985e1c
       vertices: []
       indices: 
       edges: []
@@ -454,18 +594,18 @@ TextureImporter:
       name: cutia-Sheet_23
       rect:
         serializedVersion: 2
-        x: 76
-        y: 56
-        width: 13
-        height: 13
+        x: 74
+        y: 42
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d49f9bfae6c5345a4208dfd2ee8ace
+      spriteID: 00348fc8f898c4b4c9f18e370abb5816
       vertices: []
       indices: 
       edges: []
@@ -474,18 +614,18 @@ TextureImporter:
       name: cutia-Sheet_24
       rect:
         serializedVersion: 2
-        x: 103
-        y: 56
-        width: 8
+        x: 2
+        y: 28
+        width: 19
         height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 888d8bb9b86c86a4699734b321aa105b
+      spriteID: ee917e233f28f064885355d902d5588c
       vertices: []
       indices: 
       edges: []
@@ -494,18 +634,18 @@ TextureImporter:
       name: cutia-Sheet_25
       rect:
         serializedVersion: 2
-        x: 127
-        y: 56
-        width: 6
-        height: 13
+        x: 26
+        y: 28
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4930b6608306da4c8e4db1ca596c08d
+      spriteID: e58a084554bf9164b98cb4106b237f80
       vertices: []
       indices: 
       edges: []
@@ -514,18 +654,18 @@ TextureImporter:
       name: cutia-Sheet_26
       rect:
         serializedVersion: 2
-        x: 151
-        y: 56
-        width: 5
-        height: 13
+        x: 50
+        y: 28
+        width: 19
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28987032b23a80a41a4fb226b15d3af0
+      spriteID: 1369fb84e8715ac4a8238b18efc0e0df
       vertices: []
       indices: 
       edges: []
@@ -534,18 +674,18 @@ TextureImporter:
       name: cutia-Sheet_27
       rect:
         serializedVersion: 2
-        x: 2
-        y: 42
-        width: 19
+        x: 73
+        y: 28
+        width: 20
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4c1b117bc10d904f96ab8cffd5f6dc2
+      spriteID: 65701ba4f309b0045b7612ee52365707
       vertices: []
       indices: 
       edges: []
@@ -554,18 +694,18 @@ TextureImporter:
       name: cutia-Sheet_28
       rect:
         serializedVersion: 2
-        x: 26
-        y: 42
+        x: 98
+        y: 28
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99d2612bac260774e89e68a011f686b7
+      spriteID: aee29727af92f524588daf68cc3adf7d
       vertices: []
       indices: 
       edges: []
@@ -574,18 +714,18 @@ TextureImporter:
       name: cutia-Sheet_29
       rect:
         serializedVersion: 2
-        x: 50
-        y: 42
+        x: 2
+        y: 14
         width: 19
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5b32b435a463443a5a8bbdebc68a98
+      spriteID: 280b698fc55757b4790d08e97a0c168e
       vertices: []
       indices: 
       edges: []
@@ -594,18 +734,78 @@ TextureImporter:
       name: cutia-Sheet_30
       rect:
         serializedVersion: 2
-        x: 74
-        y: 42
-        width: 19
+        x: 27
+        y: 14
+        width: 18
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474dff9cbe54a174c802f63bd419f97e
+      spriteID: c438bccf6e5889246937bb349d717773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 14
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a6a49ad50bba542813dcac5126f3a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 15
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93acf3b4e567ea41a729a6a8e1816a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutia-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc9fe045b7f8ec4fa6011d64bc38f25
       vertices: []
       indices: 
       edges: []
@@ -614,18 +814,18 @@ TextureImporter:
       name: cutia-Sheet_34
       rect:
         serializedVersion: 2
-        x: 2
-        y: 28
-        width: 19
-        height: 13
+        x: 29
+        y: 0
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091f29b4a6558df4abcbfdde572f1e7d
+      spriteID: a2d52524bf59ea2478f3696f1457f214
       vertices: []
       indices: 
       edges: []
@@ -634,18 +834,18 @@ TextureImporter:
       name: cutia-Sheet_35
       rect:
         serializedVersion: 2
-        x: 26
-        y: 28
-        width: 19
+        x: 53
+        y: 0
+        width: 17
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d261a1d650147449442a3d1728e8a6
+      spriteID: ea7a1e42871f9a0498416cac1ddf3607
       vertices: []
       indices: 
       edges: []
@@ -654,18 +854,18 @@ TextureImporter:
       name: cutia-Sheet_36
       rect:
         serializedVersion: 2
-        x: 50
-        y: 28
-        width: 19
+        x: 79
+        y: 0
+        width: 13
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9f160701e19b064ea16c297996373c4
+      spriteID: 96aca95b0865afa4b9a41a765f6f522f
       vertices: []
       indices: 
       edges: []
@@ -674,18 +874,18 @@ TextureImporter:
       name: cutia-Sheet_37
       rect:
         serializedVersion: 2
-        x: 73
-        y: 28
-        width: 20
+        x: 101
+        y: 0
+        width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baaf5e9788ed137488dde7d420025919
+      spriteID: 861d851dfa03e1e4ba669a6864790b2b
       vertices: []
       indices: 
       edges: []
@@ -694,110 +894,30 @@ TextureImporter:
       name: cutia-Sheet_38
       rect:
         serializedVersion: 2
-        x: 98
-        y: 28
-        width: 19
+        x: 126
+        y: 0
+        width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 433a23da2f2741b4481e64321a7b88ff
+      spriteID: 64af6ebdecb1cdc4bbeda0eb0f0627ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cutia-Sheet_41
+      name: cutia-Sheet_39
       rect:
         serializedVersion: 2
-        x: 2
-        y: 13
-        width: 19
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0afcd54ace297442888aa85d6e82943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_42
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 13
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 841595b6af4eb3c4cb4cb818f959af33
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_43
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 14
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc3b85d912fe94a4f84497a336341f06
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_44
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 13
-        width: 18
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6ce68c95b49a0e40bf996054f1eaa82
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 4
+        x: 151
         y: 0
-        width: 18
-        height: 10
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -805,127 +925,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e40be28d55a915458b3fcc8e7510e0c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 0
-        width: 17
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eac182ce525ede4483c0e67a76c4f7d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 0
-        width: 17
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c29c3013a25aab64bbc73204615a264f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 0
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ce5bdd18d65544428f1b0937a130ad0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1b25a37489d8f442bcf24d1757caef3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 0
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 070c9144ad2bae646aee9a44808c0b06
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cutia-Sheet_19
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 215589bce4a9bd64b8a5921254208815
+      spriteID: 1a84854db388cdd4d86a444ae330ce48
       vertices: []
       indices: 
       edges: []

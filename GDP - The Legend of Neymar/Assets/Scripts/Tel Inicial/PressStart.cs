@@ -7,7 +7,13 @@ public class PressStart : MonoBehaviour {
     [FMODUnity.EventRef]
     public string inputSound;
 
-    static bool canPlay = true;
+    static bool canPlay;
+
+
+    private void Start()
+    {
+        canPlay = true;
+    }
 
     void Update () {
         if (canPlay)
