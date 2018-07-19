@@ -26,9 +26,11 @@ MonoBehaviour:
   - {fileID: 114244867619633724}
   - {fileID: 114408235522654682}
   - {fileID: 114539356395701452}
+  - {fileID: 114547737364410490}
+  - {fileID: 114924233731951072}
   MasterBankRef: {fileID: 114947691780376584}
   StringsBankRef: {fileID: 114546394827978266}
-  stringsBankWriteTime: 636663524569533244
+  stringsBankWriteTime: 636675649195815923
   cacheVersion: 2
 --- !u!114 &114244867619633724
 MonoBehaviour:
@@ -131,12 +133,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop\Master
     Bank.strings.bank
-  lastModified: 636663524569533244
+  lastModified: 636675649195815923
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1202
+    Value: 1296
   Exists: 1
+--- !u!114 &114547737364410490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Pegar Bola
+  guid: b3854d46831fae4886bb1c9dae9bfced
+  Banks:
+  - {fileID: 114947691780376584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 250
 --- !u!114 &114565245399296910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +271,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2750
+--- !u!114 &114924233731951072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Bola Bate Objeto
+  guid: c9e26303883b954bb787454c1352ffe6
+  Banks:
+  - {fileID: 114947691780376584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 250
 --- !u!114 &114947691780376584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,11 +306,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop\Master
     Bank.bank
-  lastModified: 636663524569493242
+  lastModified: 636675649195765920
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4457888
+    Value: 4465184
   Exists: 1
 --- !u!114 &114983955762548650
 MonoBehaviour:

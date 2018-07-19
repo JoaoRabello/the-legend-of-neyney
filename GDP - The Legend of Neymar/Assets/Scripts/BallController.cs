@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class BallController : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string somRebate;
+
     public float ballSpeed = 10f;       //Velocidade de movimento da bola
     private Player player;      //Instancia de player para receber a posição do mesmo
     private Vector2 kickDir;    //Armazena a direção do chute
@@ -92,6 +95,7 @@ public class BallController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "NPC" || collision.gameObject.tag == "Gaviao" || collision.gameObject.tag == "Boss" || collision.gameObject.tag == "Teleporter" || collision.gameObject.tag == "Door" || collision.gameObject.tag == "Abismo" || collision.gameObject.tag == "Feirante" || collision.gameObject.tag == "Cutia")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somRebate);
             player.bolaOnMaxRange = true;
             canBeKicked = false;
             anim.SetBool("isMoving", false);

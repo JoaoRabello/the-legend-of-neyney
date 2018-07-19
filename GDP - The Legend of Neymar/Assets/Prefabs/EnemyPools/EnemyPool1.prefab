@@ -1413,10 +1413,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!114 &114271803452191006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1429,10 +1430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!114 &114568954935575516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1445,10 +1447,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!114 &114643949004864044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1461,10 +1464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!114 &114787770215568658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1477,10 +1481,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!114 &114841607751625304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1493,10 +1498,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!212 &212180739902034790
 SpriteRenderer:
   m_ObjectHideFlags: 1

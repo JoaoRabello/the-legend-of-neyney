@@ -32,7 +32,7 @@ public class NightmareControl : MonoBehaviour {
 
     void callDialogue()
     {
-        dialogueTrigger.triggerDialogue();
+        dialogueTrigger.triggerDialogue(0);
     }
     
     IEnumerator destroyThis()

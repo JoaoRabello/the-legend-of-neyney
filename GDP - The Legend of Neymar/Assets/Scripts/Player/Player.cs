@@ -12,6 +12,9 @@ public class Player : Character {
     public string somRetornoBola;
 
     [FMODUnity.EventRef]
+    public string somPegaBola;
+
+    [FMODUnity.EventRef]
     public string somDestranca;
 
     [FMODUnity.EventRef]
@@ -227,6 +230,7 @@ public class Player : Character {
         //Bola
         if (other.gameObject.tag == "Bola")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somPegaBola);
             Destroy(other.gameObject);
             bolaDisponivel = true;
             bolaOnMaxRange = false;
@@ -259,6 +263,11 @@ public class Player : Character {
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
             GaviaoControl.canMove = false;
+        }
+
+        if (other.gameObject.tag == "MatoAlto")
+        {
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
         }
 
     }
@@ -325,6 +334,11 @@ public class Player : Character {
                 Destroy(GameObject.FindGameObjectWithTag("EnemyPool"));
                 enemyKilled = 0;
             }
+        }
+
+        if (other.gameObject.tag == "MatoAlto")
+        {
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
