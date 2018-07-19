@@ -249,10 +249,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somMorte: event:/Morte Inimigo
-  life: 3
+  life: 8
   speed: 5
   playerOnRange: 0
   canPursuit: 1
+  canBeDamaged: 1
 --- !u!212 &212178291102633728
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -14,12 +14,14 @@ public class Enemy : MonoBehaviour {
     private GameObject bola;
 
     //Atributos de batalha e movimento
-    public int life;
+    public int life = 0;
     public float speed = 6f;
     private float enemySpeed;
     public bool playerOnRange;
     private bool isDead;
+
     public bool canPursuit = true;
+    public bool canBeDamaged = true;
 
     private bool canGiveDMG = true;
 
@@ -28,6 +30,7 @@ public class Enemy : MonoBehaviour {
 
 
     void Start() {
+       
         player = FindObjectOfType<Player>();
         anim = GetComponent<Animator>();
     }
@@ -113,12 +116,17 @@ public class Enemy : MonoBehaviour {
     {
         GetComponent<SpriteRenderer>().color = new Color(1f, 0, 0);
 
+        canPursuit = false;
+        canBeDamaged = false;
         //Tentativa de knockback
+
         Vector2 knockback = (transform.position - bola.transform.position).normalized;
-        GetComponent<Rigidbody2D>().AddForce(knockback * 5f);
+        GetComponent<Rigidbody2D>().AddForce(knockback * 2f, ForceMode2D.Force);
 
         yield return new WaitForSeconds(0.2f);
 
+        canBeDamaged = true;
+        canPursuit = true;
         GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
     }
 

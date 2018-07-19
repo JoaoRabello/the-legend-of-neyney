@@ -238,12 +238,22 @@ public class Player : Character {
         if (other.gameObject.tag == "NPC")
         {
             FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
         }
 
+        if (other.gameObject.tag == "Feirante")
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
+            canChat = true;
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+            npc = other.GetComponent<NPCDialogue>();
+            other.GetComponent<Animator>().SetBool("Acordado", true);
+        }
+
         //Gaviao
-        if(other.gameObject.tag == "Gaviao")
+        if (other.gameObject.tag == "Gaviao")
         {
             FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
             canChat = true;
@@ -284,11 +294,21 @@ public class Player : Character {
         if (other.gameObject.tag == "NPC")
         {
             npc = other.GetComponent<NPCDialogue>();
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
             npc.canDialogue = false;
             canChat = false;
         }
 
-        if(other.gameObject.tag == "Gaviao")
+        if (other.gameObject.tag == "Feirante")
+        {
+            npc = other.GetComponent<NPCDialogue>();
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            npc.canDialogue = false;
+            canChat = false;
+            other.GetComponent<Animator>().SetBool("Acordado", false);
+        }
+
+        if (other.gameObject.tag == "Gaviao")
         {
             npc = other.GetComponent<NPCDialogue>();
             npc.canDialogue = false;
@@ -320,6 +340,7 @@ public class Player : Character {
             FMODUnity.RuntimeManager.PlayOneShot(somDestranca);
             keyImg.enabled = false;
             Destroy(col.gameObject);
+            canOpenDoor = false;
         }
 
         if (col.gameObject.tag == "Boss")
@@ -328,6 +349,16 @@ public class Player : Character {
             Debug.Log("Player Life: " + life);
         }
 
+        if (col.gameObject.tag == "Abismo" && isDashing)
+        {
+            abismo = col.gameObject.GetComponent<BoxCollider2D>();
+            abismo.enabled = false;
+            StartCoroutine(ColisaoRetorna());
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D col)
+    {
         if (col.gameObject.tag == "Abismo" && isDashing)
         {
             abismo = col.gameObject.GetComponent<BoxCollider2D>();
@@ -373,7 +404,7 @@ public class Player : Character {
 
     IEnumerator ColisaoRetorna()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         abismo.enabled = true;
     }
 

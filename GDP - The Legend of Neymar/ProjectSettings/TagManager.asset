@@ -21,6 +21,8 @@ TagManager:
   - CutiaRange
   - BoundToca
   - Abismo
+  - Feirante
+  - Cutia
   layers:
   - Default
   - TransparentFX
@@ -36,7 +38,7 @@ TagManager:
   - Bola
   - Cutia
   - CutiaParede
-  - 
+  - Enemy
   - 
   - 
   - 
