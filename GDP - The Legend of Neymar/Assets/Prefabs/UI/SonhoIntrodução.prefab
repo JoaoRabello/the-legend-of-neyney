@@ -68,6 +68,14 @@ MonoBehaviour:
     - "Estou triste e carente de carinho... Sinto aqui no peito um vazio em mim.\r"
     - "Tenho fe que voce conseguira me resgatar.\r\nDeus e TOP!"
     - Me ajude!
+  dialogue1:
+    argumentos: []
+  dialogue2:
+    argumentos: []
+  dialogue3:
+    argumentos: []
+  dialogue4:
+    argumentos: []
 --- !u!114 &114731820865206754
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,6 +11,8 @@ public class NightmareControl : MonoBehaviour {
     DialogueTrigger dialogueTrigger;
     Button button;
 
+    private LevelChanger lvlChanger;
+
     private bool canStart;
 	
 	void Start() {
@@ -38,7 +40,7 @@ public class NightmareControl : MonoBehaviour {
     IEnumerator destroyThis()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(2);
-        Destroy(gameObject);
+        lvlChanger = FindObjectOfType<LevelChanger>();
+        lvlChanger.fadeToLevel(2);
     }
 }

@@ -29,6 +29,7 @@ public class BossController : MonoBehaviour {
     Player playerGO;
     private Vector3 miraAtaque;
     private Animator anim;
+    public BoxCollider2D neyney;
 
     private bool canStartRollAnim = true;
 	
@@ -214,7 +215,7 @@ public class BossController : MonoBehaviour {
     {
         if(life == 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(death());
         }
     }
 
@@ -234,6 +235,14 @@ public class BossController : MonoBehaviour {
         anim.SetFloat("Y", move.y);
     }
 
+    IEnumerator death()
+    {
+        anim.SetBool("morto", true);
+        yield return new WaitForSeconds(0.8f);
+        neyney.enabled = true;
+        Destroy(gameObject);
+    }
+
     IEnumerator startRoll()
     {
         anim.SetBool("isStartingRoll", true);
@@ -251,7 +260,7 @@ public class BossController : MonoBehaviour {
         yield return new WaitForSeconds(2);
         anim.SetBool("isIdle", false);
         canAttack = true;
-        miraAtaque = player.position * 10;
+        miraAtaque = player.position * 20;
         Debug.Log("Atacaaaaar!");
     }
 

@@ -8,6 +8,7 @@ public class PressStart : MonoBehaviour {
     public string inputSound;
 
     static bool canPlay;
+    private LevelChanger lvlChanger;
 
 
     private void Start()
@@ -20,17 +21,12 @@ public class PressStart : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter) )
             {
-                Debug.Log("Começa jogo");
                 canPlay = false;
                 FMODUnity.RuntimeManager.PlayOneShot(inputSound);
-                StartCoroutine(wait());
+                lvlChanger = FindObjectOfType<LevelChanger>();
+                lvlChanger.fadeToLevel(1);
             }
         }
 	}
-
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds(1.2f);
-        SceneManager.LoadScene(1);
-    }
+    
 }

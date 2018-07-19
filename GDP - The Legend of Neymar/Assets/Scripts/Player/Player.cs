@@ -56,6 +56,7 @@ public class Player : Character {
     public Rigidbody2D bolaRb;
     private Enemy enemy;
     private NPCDialogue npc;
+    private Animator botaoE;
 
     private EnemyBoundary enemyBounds;
     public int enemyKilled = 0;
@@ -260,6 +261,11 @@ public class Player : Character {
         if (other.gameObject.tag == "Gaviao")
         {
             FMODUnity.RuntimeManager.PlayOneShot(somAlerta);
+
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+            botaoE = other.transform.GetChild(0).GetComponent<Animator>();
+            StartCoroutine(esperaBotao());
+
             canChat = true;
             npc = other.GetComponent<NPCDialogue>();
             GaviaoControl.canMove = false;
@@ -320,6 +326,10 @@ public class Player : Character {
 
         if (other.gameObject.tag == "Gaviao")
         {
+            other.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            botaoE = other.transform.GetChild(0).GetComponent<Animator>();
+            StartCoroutine(esperaBotao());
+
             npc = other.GetComponent<NPCDialogue>();
             npc.canDialogue = false;
             canChat = false;
@@ -458,10 +468,16 @@ public class Player : Character {
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 255f);
     }
 
+    IEnumerator esperaBotao()
+    {
+        yield return new WaitForSeconds(0.2f);
+        botaoE.SetTrigger("Ligado");
+    }
+
     IEnumerator DestroyPlayer()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
         Destroy(gameObject);
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -77,5 +78,14 @@ public class DialogueManager : MonoBehaviour {
                 GaviaoControl.canGiveBall = true;
         }
         NightmareControl.killNightmare = true;
+
+        if(SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            FulecoCutscene.podeMudarCena++;
+        }
+        else
+        {
+            FulecoCutscene.podeMudarCena = 0;
+        }
     }
 }
