@@ -24,6 +24,7 @@ TagManager:
   - Feirante
   - Cutia
   - MatoAlto
+  - Pombo
   layers:
   - Default
   - TransparentFX
@@ -40,8 +41,8 @@ TagManager:
   - Cutia
   - CutiaParede
   - Enemy
-  - 
-  - 
+  - MatoAlto
+  - Bounds
   - 
   - 
   - 

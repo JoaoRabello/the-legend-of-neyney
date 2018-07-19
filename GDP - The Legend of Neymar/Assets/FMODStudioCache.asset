@@ -28,10 +28,33 @@ MonoBehaviour:
   - {fileID: 114539356395701452}
   - {fileID: 114547737364410490}
   - {fileID: 114924233731951072}
+  - {fileID: 114063220205581298}
   MasterBankRef: {fileID: 114947691780376584}
   StringsBankRef: {fileID: 114546394827978266}
-  stringsBankWriteTime: 636675649195815923
+  stringsBankWriteTime: 636675958843764172
   cacheVersion: 2
+--- !u!114 &114063220205581298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tema da Fase
+  guid: d32f65870f61db48884ea6e6e8231fee
+  Banks:
+  - {fileID: 114947691780376584}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 184800
 --- !u!114 &114244867619633724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,11 +156,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop\Master
     Bank.strings.bank
-  lastModified: 636675649195815923
+  lastModified: 636675958843764172
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1296
+    Value: 1338
   Exists: 1
 --- !u!114 &114547737364410490
 MonoBehaviour:
@@ -306,11 +329,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build\Desktop\Master
     Bank.bank
-  lastModified: 636675649195765920
+  lastModified: 636675958843734170
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4465184
+    Value: 7066016
   Exists: 1
 --- !u!114 &114983955762548650
 MonoBehaviour:

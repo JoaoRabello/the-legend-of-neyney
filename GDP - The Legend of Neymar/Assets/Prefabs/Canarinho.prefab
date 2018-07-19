@@ -13,7 +13,7 @@ Prefab:
   m_IsPrefabAsset: 1
 --- !u!1 &1128789561521232
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -23,6 +23,23 @@ GameObject:
   - component: {fileID: 95318284050746354}
   m_Layer: 0
   m_Name: Mato Alto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1624178487144236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4579898081590458}
+  - component: {fileID: 58181598838077966}
+  - component: {fileID: 114875719372863628}
+  m_Layer: 15
+  m_Name: Colisor Mato Alto Canarinho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,9 +89,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1128789561521232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.056, z: 0}
+  m_LocalPosition: {x: -0.0038, y: 0.030300006, z: 0}
   m_LocalScale: {x: 0.15256675, y: 0.15256675, z: 0.15256675}
   m_Children: []
+  m_Father: {fileID: 4579898081590458}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4579898081590458
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624178487144236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0038, y: -0.0863, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4156599420485354}
   m_Father: {fileID: 4591764968242636}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85,11 +116,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.73, y: 2.47, z: 0}
+  m_LocalPosition: {x: -101.5, y: 37.9, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4702794741093962}
-  - {fileID: 4156599420485354}
+  - {fileID: 4579898081590458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -126,6 +157,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58181598838077966
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624178487144236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.002604121, y: -0.0023284703}
+  serializedVersion: 2
+  m_Radius: 0.023772528
 --- !u!70 &70093989906523632
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -241,6 +287,17 @@ MonoBehaviour:
     type: 2}
   bolaRb: {fileID: 50136948047300078, guid: a86ea05b22de3e648988f985b74c0268, type: 2}
   enemyKilled: 0
+--- !u!114 &114875719372863628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1624178487144236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b70f2a2f646ce14f9d0c55672d814ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212327007868499408
 SpriteRenderer:
   m_ObjectHideFlags: 1

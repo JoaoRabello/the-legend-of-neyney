@@ -10,6 +10,7 @@ public class BossController : MonoBehaviour {
     public int life;
 
     private int i = 0;
+    private int damageCount = 0;
     private int final;
 
     private bool outOfPatterns = false;
@@ -175,8 +176,16 @@ public class BossController : MonoBehaviour {
 
         if(other.gameObject.tag == "Wall")
         {
-            StartCoroutine(tontura());
-            anim.SetBool("isTonto", true);
+            atStartPoint = false;
+            goToStart = true;
+            canAttack = false;
+            isAttacking = false;
+            atAttackPoint = false;
+
+            outOfPatterns = false;
+
+            //StartCoroutine(tontura());
+            //anim.SetBool("isTonto", true);
         }
 
         if (other.gameObject.tag == "Player")
@@ -191,8 +200,13 @@ public class BossController : MonoBehaviour {
 
         if (other.gameObject.tag == "Bola" && canBeDamaged)
         {
-            life--;
-            checkDeath();
+            if(damageCount == 0)
+            {
+                life--;
+                checkDeath();
+                damageCount++;
+            }
+
         }
     }
 
@@ -206,7 +220,17 @@ public class BossController : MonoBehaviour {
 
     void animaRoll(Vector3 move)
     {
-        anim.SetFloat("X", move.x);
+        if(transform.position.x > move.x)
+        {
+            anim.SetFloat("X", 1);
+        }
+        else
+        {
+            if(transform.position.x < move.x)
+            {
+                anim.SetFloat("X", -1);
+            }
+        }
         anim.SetFloat("Y", move.y);
     }
 
@@ -265,6 +289,7 @@ public class BossController : MonoBehaviour {
         outOfPatterns = false;
 
         canBeDamaged = false;
+        damageCount = 0;
 
         anim.SetBool("isTonto", false);
     }

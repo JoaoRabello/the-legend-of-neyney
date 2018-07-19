@@ -71,14 +71,14 @@ public class Player : Character {
     }
 	
 	// Update is called once per frame
-	protected override void Update () {
+	protected override void FixedUpdate () {
 
         if(canMoveAgain)
         {
             GetInput();
         }
 
-        base.Update();
+        base.FixedUpdate();
 
 	}
 
@@ -265,9 +265,10 @@ public class Player : Character {
             GaviaoControl.canMove = false;
         }
 
-        if (other.gameObject.tag == "MatoAlto")
+        if (other.gameObject.tag == "Pombo")
         {
-            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
+            other.gameObject.GetComponent<Pombo>().playerPerto = true;
+            other.gameObject.GetComponent<Pombo>().voa = true;
         }
 
     }
@@ -336,10 +337,12 @@ public class Player : Character {
             }
         }
 
-        if (other.gameObject.tag == "MatoAlto")
+        if (other.gameObject.tag == "Pombo")
         {
-            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+            other.gameObject.GetComponent<Pombo>().playerPerto = false;
+            
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D col)
