@@ -11,6 +11,9 @@ public class Character : MonoBehaviour {
     [FMODUnity.EventRef]
     public string pegaBola;
 
+    [FMODUnity.EventRef]
+    public string somDash;
+
     //Variável para contar a vida
     protected int life;
     
@@ -27,7 +30,7 @@ public class Character : MonoBehaviour {
     protected bool canDashInput = true;
     protected int dashInput;
 
-    private Animator animator;
+    protected Animator animator;
 
 
     // Use this for initialization
@@ -104,7 +107,11 @@ public class Character : MonoBehaviour {
     protected void Dash()
     {
         if(canDash == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(somDash);
             StartCoroutine(Dashing());
+        }
+            
     }
 
     public void AnimaMovimento(Vector2 drct) {

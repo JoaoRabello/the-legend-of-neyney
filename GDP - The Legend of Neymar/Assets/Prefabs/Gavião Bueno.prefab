@@ -74,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1961516025088716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.68, y: -0.72, z: 0}
+  m_LocalPosition: {x: 12.24, y: 2.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4950741388541688}
@@ -253,42 +253,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     argumentos:
-    - "O meu precioso menino Neyney foi raptado. N\xE3o temos bons\r\ndibradores que
-      cheguem at\xE9 l\xE1.  "
-    - "S\xF3 uma pessoa que represente t\xE3o bem a f\xFAria do\r\npovo brasileiro
-      ap\xF3s o 7 a 1 pode resgat\xE1-lo."
-    - "Voc\xEA consegue fazer isso?"
-    - '...'
-    - "Muito bem. Eu sabia que algu\xE9m t\xE3o pistola quanto voc\xEA n\xE3o\r\ndeixaria
-      para tr\xE1s o nosso menino prod\xEDgio."
-    - "Mas lembre-se: \xE9 perigoso ir sozinho! Leve isso:"
+    - "[Gavi\xE3o] O meu precioso menino Neyney foi raptado. N\xE3o temos bons\r\ndibradores
+      que cheguem at\xE9 l\xE1.  "
+    - "[Gavi\xE3o] S\xF3 uma pessoa que represente t\xE3o bem a f\xFAria do\r\npovo
+      brasileiro ap\xF3s o 7 a 1 pode resgat\xE1-lo."
+    - "[Gavi\xE3o] Voc\xEA consegue fazer isso?"
+    - '[Canarinho] ...'
+    - "[Gavi\xE3o] Muito bem. Eu sabia que algu\xE9m t\xE3o pistola quanto voc\xEA
+      n\xE3o\r\ndeixaria para tr\xE1s o nosso menino prod\xEDgio."
+    - "[Gavi\xE3o] Mas lembre-se: \xE9 perigoso ir sozinho! Leve isso:"
   dialogue1:
     argumentos:
-    - "Com a Lend\xE1ria Bola das Copas, um instrumento futebol\xEDstico m\xE1gico
-      e muito poderoso, voc\xEA ser\xE1 capaz de dibrar os seus inimigos e chegar
-      at\xE9 a Boca de Fumo para resgatar o menino Neyney."
-    - "Pressione V para chutar a bola e dibrar seus advers\xE1rios."
-    - "Ao pressionar V novamente, ela retornar\xE1 aos seus p\xE9s, causando danos
-      em seus advers\xE1rios, tanto na ida quanto na volta."
-    - "\xC9 essencial que voc\xEA resgate Neyney. Ele \xE9 o \xFAnico que sabe onde
-      encontrar o \xFAltimo peda\xE7o da Hexaforce e Fuleco tentar\xE1 arrancar essa
-      informa\xE7\xE3o do meu menino da pior maneira poss\xEDvel."
-    - '...'
-    - "H\xE3? Voc\xEA n\xE3o sabe o que \xE9 a Hexaforce?"
-    - "\xC9 um item muito precioso e dividido em seis partes, cada uma correspondendo
-      a uma habilidade que apenas verdadeiros her\xF3is brasileiros podem ter: Foco,
-      For\xE7a, F\xE9, Ousadia, Alegria e Malemol\xEAncia."
-    - "O Brasil j\xE1 reuniu cinco peda\xE7os nos anos de 58, 62, 70, 94 e 2002. Nos
-      resta apenas este \xFAltimo fragmento para conquistarmos a Ta\xE7a do Hexa,
-      atrav\xE9s de um dom que n\xE3o \xE9 visto h\xE1 anos."
-    - "Por\xE9m, Fuleco os roubou e agora est\xE1 amea\xE7ando a vida de nosso precioso
-      menino, para que ele revele o paradeiro do \xFAltimo peda\xE7o."
-    - "Se conseguir, Fuleco utilizar\xE1 esse poder contra o Brasil. \xC9 inadmiss\xEDvel.
-      Precisamos impedir este tatu-bola antes que Neyney ceda \xE0s torturas de Fuleco.
-      Ou pior, antes que ele possa morrer."
-    - "Agora v\xE1! Neyney e todo o povo brasileiro precisam da sua bravura, Canarinho!"
-    - "N\xE3o podemos tomar outra goleada. Bola no p\xE9 e sorriso no rosto! Para
-      derrotar Fuleco, voc\xEA precisa jogar com garra e com gosto!"
+    - "[Gavi\xE3o] Com a Lend\xE1ria Bola das Copas, um instrumento futebol\xEDstico
+      m\xE1gico e muito poderoso, voc\xEA ser\xE1 capaz de dibrar os seus inimigos
+      e chegar at\xE9 a Boca de Fumo para resgatar o menino Neyney."
+    - "[Gavi\xE3o] Pressione R para chutar a bola e dibrar seus advers\xE1rios."
+    - "[Gavi\xE3o] Ao pressionar R novamente, ela retornar\xE1 aos seus p\xE9s, causando
+      danos em seus advers\xE1rios, tanto na ida quanto na volta."
+    - "[Gavi\xE3o] \xC9 essencial que voc\xEA resgate Neyney. Ele \xE9 o \xFAnico
+      que sabe onde encontrar o \xFAltimo peda\xE7o da Hexaforce e Fuleco tentar\xE1
+      arrancar essa informa\xE7\xE3o do meu menino da pior maneira poss\xEDvel."
+    - '[Canarinho] ...'
+    - "[Gavi\xE3o] H\xE3? Voc\xEA n\xE3o sabe o que \xE9 a Hexaforce?"
+    - "[Gavi\xE3o] \xC9 um item muito precioso e dividido em seis partes, cada uma
+      correspondendo a uma habilidade que apenas verdadeiros her\xF3is brasileiros
+      podem ter: Foco, For\xE7a, F\xE9, Ousadia, Alegria e Malemol\xEAncia."
+    - "[Gavi\xE3o] O Brasil j\xE1 reuniu cinco peda\xE7os nos anos de 58, 62, 70,
+      94 e 2002. Nos resta apenas este \xFAltimo fragmento para conquistarmos a Ta\xE7a
+      do Hexa, atrav\xE9s de um dom que n\xE3o \xE9 visto h\xE1 anos."
+    - "[Gavi\xE3o] Por\xE9m, Fuleco os roubou e agora est\xE1 amea\xE7ando a vida
+      de nosso precioso menino, para que ele revele o paradeiro do \xFAltimo peda\xE7o."
+    - "[Gavi\xE3o] Se conseguir, Fuleco utilizar\xE1 esse poder contra o Brasil. \xC9
+      inadmiss\xEDvel. Precisamos impedir este tatu-bola antes que Neyney ceda \xE0s
+      torturas de Fuleco. Ou pior, antes que ele possa morrer."
+    - "[Gavi\xE3o] Agora v\xE1! Neyney e todo o povo brasileiro precisam da sua bravura,
+      Canarinho!"
+    - "[Gavi\xE3o] N\xE3o podemos tomar outra goleada. Bola no p\xE9 e sorriso no
+      rosto! Para derrotar Fuleco, voc\xEA precisa jogar com garra e com gosto!"
   dialogue2:
     argumentos:
     - "J\xE1 disse, v\xE1 derrotar o fuleco\n"

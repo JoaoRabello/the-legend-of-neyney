@@ -46,6 +46,11 @@ public class CutiaController : MonoBehaviour
         {
             anim.SetBool("isMoving", true);
             transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
+            if(nextPos.x > transform.position.x)
+                anim.SetFloat("X", 1);
+            else
+                if (nextPos.x < transform.position.x)
+                    anim.SetFloat("X", -1);
         }
         else
         {
@@ -55,6 +60,7 @@ public class CutiaController : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
                 if(runToToca)
                     col.enabled = false;
+                anim.SetFloat("X", 1);
             }
             else
             {
@@ -84,14 +90,6 @@ public class CutiaController : MonoBehaviour
             if (randomDirection <= 50)
             {
                 randomX = Random.Range(-10, 10);
-                if (randomX > 0)
-                {
-                    anim.SetFloat("X", 1);
-                }
-                else
-                {
-                    anim.SetFloat("X", -1);
-                }
                 nextPos = thisPos + new Vector2(randomX, 0);
             }
             else

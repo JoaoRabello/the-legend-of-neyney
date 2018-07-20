@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1852322496337008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -101.5, y: 37.9, z: 0}
+  m_LocalPosition: {x: 9.65, y: 2.47, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4702794741093962}
@@ -252,18 +252,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  pegaBola: event:/Ganhando a Bola
+  pegaBola: "event:/SFX/Intera\xE7\xF5es/SFX - Ganhar Bola"
+  somDash: event:/SFX/Canarinho/SFX - Dibre
   direction: {x: 0, y: 0}
   dashDirection: {x: 0, y: 0}
   isDead: 0
   canMoveAgain: 1
   isDashing: 0
-  somChute: event:/Bola Chute
-  somRetornoBola: event:/Bola Retorna
-  somPegaBola: event:/Pegar Bola
-  somDestranca: event:/Destrancar
-  somAlerta: "event:/Alerta A\xE7\xE3o"
-  somImpedeDeChutar: event:/Negar Chute
+  somChute: event:/SFX/Canarinho/SFX - Chute
+  somRetornoBola: event:/SFX/Bola/SFX - Bola - Voltando
+  somPegaBola: event:/SFX/Bola/SFX - feedback retorno da bola (HUD)
+  somDestranca: "event:/SFX/Intera\xE7\xF5es/SFX - destrancar"
+  somAlerta: "event:/SFX/Intera\xE7\xF5es/SFX - \xEDcone de a\xE7\xE3o"
+  somImpedeDeChutar: event:/SFX/Bola/SFX - negar chute
+  somDanoNoPlayer: event:/SFX/Canarinho/SFX - feedback de dano player
+  somMorte: "event:/SFX/Intera\xE7\xF5es/SFX - Game Over"
   camGO: {fileID: 0}
   isAlive: 1
   playerNaParede: 0

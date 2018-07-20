@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88929cddebe51b4cb003a7c1f3b31a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somClique: "event:/Passar Di\xE1logo"
+  somClique: "event:/SFX/Intera\xE7\xF5es/SFX - passar dialogo"
   oldSprite: {fileID: 21300000, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
   newSprite: {fileID: 21300002, guid: fb0cf22ff87008d4e9a3cad727d61890, type: 3}
 --- !u!114 &114989571513072588

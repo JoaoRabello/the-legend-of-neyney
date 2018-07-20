@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c29bb25b-6481-43cb-b6ec-201629fff5b7}">
+        <property name="assetPath">
+            <value>SFX/2/SFX - passar dialogo.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.17734693877551019</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{003880d4-2571-41fc-8578-227dee5b4f7b}</destination>
+        </relationship>
+    </object>
+</objects>

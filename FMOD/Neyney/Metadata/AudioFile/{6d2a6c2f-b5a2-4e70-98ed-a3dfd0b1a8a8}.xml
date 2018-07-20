@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6d2a6c2f-b5a2-4e70-98ed-a3dfd0b1a8a8}">
+        <property name="assetPath">
+            <value>SFX/1/SFX - Bola - Voltando.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.5</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{003880d4-2571-41fc-8578-227dee5b4f7b}</destination>
+        </relationship>
+    </object>
+</objects>

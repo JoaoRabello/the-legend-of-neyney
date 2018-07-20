@@ -358,7 +358,7 @@ Transform:
   m_GameObject: {fileID: 1734095321324286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.131126, y: -2.1219788, z: -0.06333723}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 4130459363520748}
   - {fileID: 4475853805571688}
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 1956487929149298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.304825, y: 3.2494926, z: -0.06333723}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 4422841489040862}
   - {fileID: 4923767535585772}
@@ -428,7 +428,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505083990476348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99.963806, y: 55.323563, z: 0.06333723}
+  m_LocalPosition: {x: -99.26774, y: 55.687035, z: 0.06333723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4680979810198098}
@@ -485,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 1019813524453914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.6556473, y: 3.2494926, z: -0.06333723}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 4235193153432070}
   - {fileID: 4032230435631178}
@@ -500,8 +500,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995004593840762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0880356, y: -2.2652168, z: -0.06333723}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -7.5389, y: -2.8664, z: -0.06333723}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 0.5992}
   m_Children:
   - {fileID: 4616561026612572}
   - {fileID: 4449245692280582}
@@ -958,7 +958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 16
   speed: 9
   playerOnRange: 0
@@ -975,7 +976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 16
   speed: 9
   playerOnRange: 0
@@ -992,7 +994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 16
   speed: 9
   playerOnRange: 0
@@ -1009,7 +1012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 16
   speed: 9
   playerOnRange: 0

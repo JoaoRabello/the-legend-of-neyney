@@ -1639,7 +1639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1656,7 +1657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1673,7 +1675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1690,7 +1693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1707,7 +1711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1724,7 +1729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0
@@ -1741,7 +1747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c1874083e47af4093a87df502f3d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somMorte: event:/Morte Inimigo
+  somMorte: event:/SFX/Inimigo/SFX - Inimigo desaparece
+  somDano: event:/SFX/Inimigo/SFX - feedback de dano inimigo
   life: 8
   speed: 5
   playerOnRange: 0

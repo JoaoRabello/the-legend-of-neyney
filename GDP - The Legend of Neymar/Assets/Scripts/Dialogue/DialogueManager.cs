@@ -87,5 +87,10 @@ public class DialogueManager : MonoBehaviour {
         {
             FulecoCutscene.podeMudarCena = 0;
         }
+
+        if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            Outro.gotocredits = true;
+        }
     }
 }

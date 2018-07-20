@@ -6,6 +6,7 @@ public class ChangeAreaTP : MonoBehaviour {
 
     public Player player;
     public Camera cam;
+    public GameObject som;
 
     //public Vector3 firstWaypoint;
     public GameObject destinyWaypoint;
@@ -14,7 +15,7 @@ public class ChangeAreaTP : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
-
+            Instantiate(som);
             player.transform.position = destinyWaypoint.transform.position;
             cam.transform.position = destinyWaypoint.transform.position;
         }

@@ -7,9 +7,10 @@ public class PressStart : MonoBehaviour {
     [FMODUnity.EventRef]
     public string inputSound;
 
+
     static bool canPlay;
     private LevelChanger lvlChanger;
-
+    private FMOD_StudioEventEmitter emissor;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class PressStart : MonoBehaviour {
                 FMODUnity.RuntimeManager.PlayOneShot(inputSound);
                 lvlChanger = FindObjectOfType<LevelChanger>();
                 lvlChanger.fadeToLevel(1);
+                Destroy(gameObject);
             }
         }
 	}

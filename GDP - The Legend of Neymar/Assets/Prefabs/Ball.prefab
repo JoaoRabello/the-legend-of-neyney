@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6593257f50057734e9efc17dd5c8aed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somRebate: event:/Bola Bate Objeto
+  somRebate: event:/SFX/Bola/SFX - Bola - Impacto
   ballSpeed: 5
   kickRange: {x: 0, y: 0}
   canBeKicked: 1

@@ -23,6 +23,12 @@ public class Player : Character {
     [FMODUnity.EventRef]
     public string somImpedeDeChutar;
 
+    [FMODUnity.EventRef]
+    public string somDanoNoPlayer;
+
+    [FMODUnity.EventRef]
+    public string somMorte;
+
     private BoxCollider2D bounds;
     private CameraMovement theCam;
     public Camera camGO;
@@ -90,7 +96,7 @@ public class Player : Character {
         direction = Vector2.zero;
 
         //Verifica se a entrada do teclado indica o movimento para cima (w ou seta cima)
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
+        if (Input.GetKey(KeyCode.UpArrow)) {
 
             direction += Vector2.up;
             if (canDashInput || dashInput == 1)
@@ -102,7 +108,7 @@ public class Player : Character {
 
         }
         else {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
+            if (Input.GetKey(KeyCode.LeftArrow)) {  //Verifica se a entrada do teclado indica o movimento para a esquerda (a ou seta esquerda)
 
                 direction += Vector2.left;
                 if(canDashInput || dashInput == 2)
@@ -113,7 +119,7 @@ public class Player : Character {
                 bolaDir = new Vector2 (-0.5f , -0.5f);
             }
             else {
-                if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
+                if (Input.GetKey(KeyCode.DownArrow)) { //Verifica se a entrada do teclado indica o movimento para baixo (s ou seta baixo)
 
                     direction += Vector2.down;
                     if(canDashInput || dashInput == 3)
@@ -124,7 +130,7 @@ public class Player : Character {
                     bolaDir = new Vector2 (0 , -0.8f);
                 }
                 else {
-                    if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
+                    if (Input.GetKey(KeyCode.RightArrow)) { //Verifica se a entrada do teclado indica o movimento para a direita (d ou seta direita)
 
                         direction += Vector2.right;
                         if(canDashInput || dashInput == 4)
@@ -138,12 +144,12 @@ public class Player : Character {
             }       
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Dash();
         }
 
-        if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && !playerNaParede && bolaRecebida)
+        if (Input.GetKeyDown(KeyCode.R) && bolaDisponivel == true && !playerNaParede && bolaRecebida)
         {
             chutaBola();
             bolaControl = FindObjectOfType<BallController>();
@@ -151,14 +157,14 @@ public class Player : Character {
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.V) && bolaDisponivel == false && bolaOnMaxRange == true && bolaRecebida)
+            if (Input.GetKeyDown(KeyCode.R) && bolaDisponivel == false && bolaOnMaxRange == true && bolaRecebida)
             {
                 bolaControl.canBeKicked = false;
                 FMODUnity.RuntimeManager.PlayOneShot(somRetornoBola);
             }
             else
             {
-                if(Input.GetKeyDown(KeyCode.V) && bolaDisponivel == true && playerNaParede && bolaRecebida)
+                if(Input.GetKeyDown(KeyCode.R) && bolaDisponivel == true && playerNaParede && bolaRecebida)
                 {
                     FMODUnity.RuntimeManager.PlayOneShot(somImpedeDeChutar);
                 }
@@ -413,6 +419,7 @@ public class Player : Character {
     {
         if (life == 0)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somMorte);
             isAlive = false;
             isDead = true;
             canMoveAgain = false;
@@ -424,6 +431,7 @@ public class Player : Character {
     public void damage()
     {
         images[imageCount].sprite = semVida;
+        FMODUnity.RuntimeManager.PlayOneShot(somDanoNoPlayer);
         life--;
         imageCount--;
         StartCoroutine(DamageCoolDown());

@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour {
     [FMODUnity.EventRef]
     public string somMorte;
 
+    [FMODUnity.EventRef]
+    public string somDano;
 
 
     private Player player;
@@ -93,6 +95,7 @@ public class Enemy : MonoBehaviour {
         if (other.gameObject.tag == "Bola")
         {
             life--;
+            FMODUnity.RuntimeManager.PlayOneShot(somDano);
             bola = other.gameObject;
             StartCoroutine(Blinker());
             checkDeath();
@@ -118,10 +121,6 @@ public class Enemy : MonoBehaviour {
 
         canPursuit = false;
         canBeDamaged = false;
-        //Tentativa de knockback
-
-        Vector2 knockback = (transform.position - bola.transform.position).normalized;
-        GetComponent<Rigidbody2D>().AddForce(knockback * 2f, ForceMode2D.Force);
 
         yield return new WaitForSeconds(0.2f);
 

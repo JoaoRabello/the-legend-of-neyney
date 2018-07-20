@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string somQuica;
+
+    [FMODUnity.EventRef]
+    public string somQuebraCaixa;
+
+    [FMODUnity.EventRef]
+    public string somTontura;
+
+    [FMODUnity.EventRef]
+    public string somVoltaInicio;
+
     public Transform[] waypoints;
     private float speed = 15f;
     private float bossSpeed;
@@ -30,6 +42,7 @@ public class BossController : MonoBehaviour {
     private Vector3 miraAtaque;
     private Animator anim;
     public BoxCollider2D neyney;
+    public CapsuleCollider2D buraco;
 
     private bool canStartRollAnim = true;
 	
@@ -109,6 +122,8 @@ public class BossController : MonoBehaviour {
 
         if (transform.position == waypoints[i].transform.position)
         {
+            if(final != 30)
+                FMODUnity.RuntimeManager.PlayOneShot(somQuica);
             i++;
         }
 
@@ -171,6 +186,7 @@ public class BossController : MonoBehaviour {
     {
         if(other.gameObject.tag == "Box")
         {
+            FMODUnity.RuntimeManager.PlayOneShot(somQuebraCaixa);
             StartCoroutine(tontura());
             anim.SetBool("isTonto", true);
         }
@@ -185,6 +201,7 @@ public class BossController : MonoBehaviour {
 
             outOfPatterns = false;
 
+            FMODUnity.RuntimeManager.PlayOneShot(somVoltaInicio);
             //StartCoroutine(tontura());
             //anim.SetBool("isTonto", true);
         }
@@ -240,6 +257,7 @@ public class BossController : MonoBehaviour {
         anim.SetBool("morto", true);
         yield return new WaitForSeconds(0.8f);
         neyney.enabled = true;
+        buraco.enabled = true;
         Destroy(gameObject);
     }
 
@@ -269,8 +287,13 @@ public class BossController : MonoBehaviour {
         tonto = true;
         canAttack = false;
         canBeDamaged = true;
-
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1.25f);
+        FMODUnity.RuntimeManager.PlayOneShot(somTontura);
+        yield return new WaitForSeconds(1.25f);
+        FMODUnity.RuntimeManager.PlayOneShot(somTontura);
+        yield return new WaitForSeconds(1.25f);
+        FMODUnity.RuntimeManager.PlayOneShot(somTontura);
+        yield return new WaitForSeconds(1.25f);
 
         corrigeParaInicio();
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{64e04046-18ef-4c52-974a-22d1ad9a1956}">
+        <property name="name">
+            <value>Pegar chave</value>
+        </property>
+        <relationship name="folder">
+            <destination>{815bd71d-8080-4fcc-bc0f-967436601c15}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{31ed2006-f92b-49d7-9970-719870d1f13b}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{31ed2006-f92b-49d7-9970-719870d1f13b}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

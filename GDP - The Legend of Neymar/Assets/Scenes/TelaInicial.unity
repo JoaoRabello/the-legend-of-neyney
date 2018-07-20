@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff3139448784874e9784405ebab367a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSound: event:/StartGame
+  inputSound: "event:/SFX/Intera\xE7\xF5es/SFX - iniciar jogo (v2)"
 --- !u!4 &1664445957
 Transform:
   m_ObjectHideFlags: 0

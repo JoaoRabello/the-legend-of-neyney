@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\PressStart.fspro
-  SourceProjectPathUnformatted: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\PressStart.fspro
-  SourceBankPathUnformatted: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\PressStart\Build
+  sourceProjectPath: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\Neyney\Neyney.fspro
+  SourceProjectPathUnformatted: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\Neyney\Neyney.fspro
+  SourceBankPathUnformatted: C:\Users\Carlinhos\Documents\UnityProjects\the-legend-of-neyney\FMOD\Neyney\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
