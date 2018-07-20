@@ -736,7 +736,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Davi
+  m_text: Davi Bretas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad8416851e46ce743b34996071870efc, type: 2}
   m_sharedMaterial: {fileID: 21835958971626394, guid: ad8416851e46ce743b34996071870efc,
@@ -804,10 +804,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 839034087}
-    characterCount: 4
+    characterCount: 11
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1

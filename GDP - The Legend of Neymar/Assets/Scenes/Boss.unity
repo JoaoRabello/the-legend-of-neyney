@@ -3047,6 +3047,18 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: displayNextSentence
       objectReference: {fileID: 0}
+    - target: {fileID: 114258098702619382, guid: d73507ecdcbb7354f8494b3e444da24d,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ad8416851e46ce743b34996071870efc,
+        type: 2}
+    - target: {fileID: 114258098702619382, guid: d73507ecdcbb7354f8494b3e444da24d,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 21835958971626394, guid: ad8416851e46ce743b34996071870efc,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d73507ecdcbb7354f8494b3e444da24d, type: 2}
   m_IsPrefabAsset: 0
